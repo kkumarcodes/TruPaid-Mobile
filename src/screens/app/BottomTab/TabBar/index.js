@@ -6,7 +6,7 @@ import {Theme} from '../../../../styles/theme';
 import FeedScreen from '../../feed-screen';
 import DealFeedScreen from '../../deal-feed-screen';
 import ProfileScreen from '../../profile-screen';
-import ReveelCardScreen from '../../../reveel-card';
+import ReveelCardScreen from '../../../trupaid-card';
 
 const BottomBar = createBottomTabNavigator();
 
@@ -76,10 +76,10 @@ export const TabBar = ({barColor}) => (
           focused ?
             <View>
               <View style={styles.circle}/>
-              <Image source={Theme.icon_reveel_card_nor} style={styles.icon}/>
+              <Image source={Theme.icon_trupaid_card_nor} style={styles.icon}/>
             </View>
             :
-            <Image source={Theme.icon_reveel_card_dis} style={styles.icon}/>
+            <Image source={Theme.icon_trupaid_card_dis} style={styles.icon}/>
         ),
         tabBarLabel: '',
       }}

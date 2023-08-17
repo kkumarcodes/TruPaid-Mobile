@@ -20,8 +20,8 @@ const icon_heart = require('../assets/icons/icon_heart.png');
 const icon_message = require('../assets/icons/icon_message.png');
 const icon_profile_dis = require('../assets/icons/icon_profile_dis.png');
 const icon_profile_nor = require('../assets/icons/icon_profile_nor.png');
-const icon_reveel_card_nor = require('../assets/icons/icon_reveel_card_nor.png');
-const icon_reveel_card_dis = require('../assets/icons/icon_reveel_card_dis.png');
+const icon_trupaid_card_nor = require('../assets/icons/icon_trupaid_card_nor.png');
+const icon_trupaid_card_dis = require('../assets/icons/icon_trupaid_card_dis.png');
 const icon_add = require('../assets/icons/icon_add.png');
 const icon_3dots = require('../assets/icons/icon_3dots.png');
 const icon_arrow_left = require('../assets/icons/icon_arrow_left.png');
@@ -73,13 +73,13 @@ const card_frame = require('../assets/images/card_frame.png');
 const card_frame1 = require('../assets/images/card_frame1.png');
 
 // assets for Apto
-const reveel_card_logo = require('../assets/images/reveel_card_logo.png');
-const reveel_card_logo2 = require('../assets/images/reveel_card_logo2.png');
+const trupaid_card_logo = require('../assets/images/trupaid_card_logo.png');
+const trupaid_card_logo2 = require('../assets/images/trupaid_card_logo2.png');
 const subway = require('../assets/icons/subway.png');
-const reveel_card_subway_bar = require('../assets/icons/reveel_card_subway_bar.png');
+const trupaid_card_subway_bar = require('../assets/icons/trupaid_card_subway_bar.png');
 const icon_pig = require('../assets/icons/icon_pig.png');
-const icon_reveel_card = require('../assets/icons/icon_reveel_card.png');
-const icon_reveel_card2 = require('../assets/icons/icon_reveel_card2.png');
+const icon_trupaid_card = require('../assets/icons/icon_trupaid_card.png');
+const icon_trupaid_card2 = require('../assets/icons/icon_trupaid_card2.png');
 const icon_user_data = require('../assets/icons/icon_user_data.png');
 const icon_lock = require('../assets/icons/icon_lock.png');
 const icon_bell = require('../assets/icons/icon_bell.png');
@@ -172,8 +172,8 @@ export const Theme = {
   icon_message,
   icon_profile_dis,
   icon_profile_nor,
-  icon_reveel_card_nor,
-  icon_reveel_card_dis,
+  icon_trupaid_card_nor,
+  icon_trupaid_card_dis,
   icon_add,
   icon_arrow_left,
   icon_back_arrow_w,
@@ -184,13 +184,13 @@ export const Theme = {
   icon_receipt,
   icon_logout,
   icon_setting,
-  reveel_card_logo,
-  reveel_card_logo2,
+  trupaid_card_logo,
+  trupaid_card_logo2,
   subway,
-  reveel_card_subway_bar,
+  trupaid_card_subway_bar,
   icon_pig,
-  icon_reveel_card,
-  icon_reveel_card2,
+  icon_trupaid_card,
+  icon_trupaid_card2,
   icon_user_data,
   icon_lock,
   icon_bell,

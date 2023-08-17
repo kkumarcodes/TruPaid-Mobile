@@ -453,7 +453,7 @@ export const GET_PERSON_QUERY = gql`
                           numFollowing
                           totalPendingDemand
                           totalInfluencedPurchases
-                          reveelScore
+                          trupaidScore
                         }
                         followedBrands {
                           brandId
@@ -643,7 +643,7 @@ export const POST_APTO_USER = gql`
   mutation postAptoUser($payload: AptoUserPayload!) {
     postAptoUser(payload: $payload) {
       id
-      reveelAptoId
+      trupaidAptoId
       aptoId
       firstName
       lastName
@@ -758,7 +758,7 @@ export const APTO_MOBILE_ACCESS = gql`
       mobileAPIPublicKey
       aptoUser {
         id
-        reveelAptoId
+        trupaidAptoId
         firstName
         lastName
         email
