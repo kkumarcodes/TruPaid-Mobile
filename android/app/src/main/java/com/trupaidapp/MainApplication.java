@@ -1,4 +1,4 @@
-package com.trupaiddevapp;
+package com.trupaidapp;
 
 import android.app.Application;
 import android.content.Context;

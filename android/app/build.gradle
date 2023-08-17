@@ -132,7 +132,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.trupaiddevapp"
+        applicationId "com.trupaidapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode Integer.parseInt(APP_VERSION_CODE)

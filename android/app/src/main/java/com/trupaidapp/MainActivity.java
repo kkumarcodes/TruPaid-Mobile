@@ -1,4 +1,4 @@
-package com.trupaiddevapp;
+package com.trupaidapp;
 
 import com.facebook.react.ReactActivity;
 
