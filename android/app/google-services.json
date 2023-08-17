@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "363019582819",
+    "project_id": "trupaid-staging-30e7e",
+    "storage_bucket": "trupaid-staging-30e7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363019582819:android:91b6aa7e48b94935666756",
+        "android_client_info": {
+          "package_name": "com.trupaid.staging.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363019582819-gs1ftlcto31jbtvar0g6essul9hfl2do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcCnCMgORH70RypQz_3Iqoao_uD_mD3Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363019582819-gs1ftlcto31jbtvar0g6essul9hfl2do.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "363019582819-u353s60j00o5aqupjjo5tdb5fj3ve3qb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trupaiddev.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363019582819:android:46228eadc60ccb02666756",
+        "android_client_info": {
+          "package_name": "com.trupaiddevapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363019582819-gs1ftlcto31jbtvar0g6essul9hfl2do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcCnCMgORH70RypQz_3Iqoao_uD_mD3Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363019582819-gs1ftlcto31jbtvar0g6essul9hfl2do.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "363019582819-u353s60j00o5aqupjjo5tdb5fj3ve3qb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trupaiddev.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
