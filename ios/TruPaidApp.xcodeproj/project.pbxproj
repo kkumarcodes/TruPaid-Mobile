@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* TruPaidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TruPaidTests.m */; };
 		08B6C1E937CE40D29722C520 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7CF0F1F895E4B879C03E6EF /* Inter-Light.ttf */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		204089003FDA17A6DA7780D2 /* libPods-TruPaid-TruPaidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAF7F0A5514F3AA62460B56 /* libPods-TruPaid-TruPaidTests.a */; };
 		334AAEF32CEB47DE8DB1C657 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3001F165082D4397A2EED449 /* Gilroy-Bold.ttf */; };
 		34B9391E152842E4ADCFD673 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09D77E9BA630447199F92493 /* Inter-Bold.ttf */; };
 		5811B3641D58E6155C1282DD /* libPods-TruPaid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B75607163D1105727386CFD3 /* libPods-TruPaid.a */; };
 		5B53E929BA3F4A8AA9ACD27F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D47BAB3A7354F7D99A3BC81 /* Rubik-Regular.ttf */; };
 		61774187EC6E4640BFBFF7DC /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2C89E8110F4106B1A866F1 /* Inter-Medium.ttf */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8410AE542A8F045D0066501B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8410AE532A8F045D0066501B /* Info.plist */; };
+		8422FE522A8E7A2E00DD1150 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422FE512A8E7A2E00DD1150 /* AppDelegate.m */; };
+		8422FE542A8E7A3900DD1150 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422FE532A8E7A3900DD1150 /* Images.xcassets */; };
+		8422FE582A8E7A4A00DD1150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8422FE572A8E7A4A00DD1150 /* LaunchScreen.storyboard */; };
+		8422FE5A2A8E7A5200DD1150 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422FE592A8E7A5200DD1150 /* main.m */; };
+		8422FE5C2A8E7A6600DD1150 /* TruPaidAppTests in Resources */ = {isa = PBXBuildFile; fileRef = 8422FE5B2A8E7A6600DD1150 /* TruPaidAppTests */; };
 		910BB6F42C414720BEBCCC81 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C80A7B97F74D3597C1580A /* Gilroy-Regular.ttf */; };
 		98F928629341448A95A5D88B /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2850B9621D943A5A6F82E58 /* Gilroy-SemiBold.ttf */; };
 		A8492D7BC3F94274A81C434B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24113C6CC67C4603891DF09A /* Inter-SemiBold.ttf */; };
@@ -44,27 +45,26 @@
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* TruPaidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruPaidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* TruPaidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TruPaidTests.m; sourceTree = "<group>"; };
 		09D77E9BA630447199F92493 /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TruPaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruPaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TruPaid/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TruPaid/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TruPaid/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TruPaid/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TruPaid/main.m; sourceTree = "<group>"; };
-		1D47BAB3A7354F7D99A3BC81 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../src/assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		1D47BAB3A7354F7D99A3BC81 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../src/assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		24113C6CC67C4603891DF09A /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		2EDB5F02671B4E80BD8CE5A4 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Medium.ttf"; path = "../src/assets/fonts/Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		3001F165082D4397A2EED449 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Bold.ttf"; path = "../src/assets/fonts/Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		7994B6F0BA6B4814BFBA4218 /* Gilroy-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Light.ttf"; path = "../src/assets/fonts/Gilroy-Light.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TruPaid/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83C80A7B97F74D3597C1580A /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Regular.ttf"; path = "../src/assets/fonts/Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		83E3E1CCC4E6727C952593F4 /* Pods-TruPaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaid.debug.xcconfig"; path = "Target Support Files/Pods-TruPaid/Pods-TruPaid.debug.xcconfig"; sourceTree = "<group>"; };
+		8410AE532A8F045D0066501B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TruPaidApp/Info.plist; sourceTree = "<group>"; };
+		8422FE502A8E7A2E00DD1150 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TruPaidApp/AppDelegate.h; sourceTree = "<group>"; };
+		8422FE512A8E7A2E00DD1150 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TruPaidApp/AppDelegate.m; sourceTree = "<group>"; };
+		8422FE532A8E7A3900DD1150 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TruPaidApp/Images.xcassets; sourceTree = "<group>"; };
+		8422FE572A8E7A4A00DD1150 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TruPaidApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8422FE592A8E7A5200DD1150 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TruPaidApp/main.m; sourceTree = "<group>"; };
+		8422FE5B2A8E7A6600DD1150 /* TruPaidAppTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TruPaidAppTests; sourceTree = "<group>"; };
 		95705D60850746639B28F700 /* Oxanium-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oxanium-Medium.ttf"; path = "../src/assets/fonts/Oxanium-Medium.ttf"; sourceTree = "<group>"; };
 		9A2C89E8110F4106B1A866F1 /* Inter-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.ttf"; path = "../src/assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
 		9DF82BF729384EB99819B044 /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
-		9EF054BA2D4941CF8BF474DB /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../src/assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		9EF054BA2D4941CF8BF474DB /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../src/assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		A2850B9621D943A5A6F82E58 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-SemiBold.ttf"; path = "../src/assets/fonts/Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		A7CF0F1F895E4B879C03E6EF /* Inter-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Light.ttf"; path = "../src/assets/fonts/Inter-Light.ttf"; sourceTree = "<group>"; };
 		AE9FE9B4269ECF1E003E65D8 /* AppCenter-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
@@ -98,34 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* TruPaidTests */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F21AD99517003FC87E /* TruPaidTests.m */,
-				00E356F01AD99517003FC87E /* Supporting Files */,
-			);
-			path = TruPaidTests;
-			sourceTree = "<group>";
-		};
-		00E356F01AD99517003FC87E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F11AD99517003FC87E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* TruPaid */ = {
 			isa = PBXGroup;
 			children = (
+				8410AE532A8F045D0066501B /* Info.plist */,
 				AEDB150526FE23880089C331 /* GoogleService-Info.plist */,
 				AE9FE9B4269ECF1E003E65D8 /* AppCenter-Config.plist */,
-				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
-				13B07FB71A68108700A75B9A /* main.m */,
+				8422FE502A8E7A2E00DD1150 /* AppDelegate.h */,
+				8422FE512A8E7A2E00DD1150 /* AppDelegate.m */,
+				8422FE532A8E7A3900DD1150 /* Images.xcassets */,
+				8422FE572A8E7A4A00DD1150 /* LaunchScreen.storyboard */,
+				8422FE592A8E7A5200DD1150 /* main.m */,
 			);
 			name = TruPaid;
 			sourceTree = "<group>";
@@ -182,9 +165,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				8422FE5B2A8E7A6600DD1150 /* TruPaidAppTests */,
 				13B07FAE1A68108700A75B9A /* TruPaid */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* TruPaidTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				177D9F4D79E649E4BEEF4E68 /* Resources */,
@@ -257,7 +240,8 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -268,7 +252,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TruPaid" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TruPaidApp" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -299,8 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				AEDB150626FE23880089C331 /* GoogleService-Info.plist in Resources */,
 				AE9FE9B5269ECF1E003E65D8 /* AppCenter-Config.plist in Resources */,
 				334AAEF32CEB47DE8DB1C657 /* Gilroy-Bold.ttf in Resources */,
@@ -309,11 +291,15 @@
 				910BB6F42C414720BEBCCC81 /* Gilroy-Regular.ttf in Resources */,
 				E6EB226869494E49AABCF296 /* TestPitchSans-Bold.otf in Resources */,
 				98F928629341448A95A5D88B /* Gilroy-SemiBold.ttf in Resources */,
+				8410AE542A8F045D0066501B /* Info.plist in Resources */,
 				34B9391E152842E4ADCFD673 /* Inter-Bold.ttf in Resources */,
 				08B6C1E937CE40D29722C520 /* Inter-Light.ttf in Resources */,
 				61774187EC6E4640BFBFF7DC /* Inter-Medium.ttf in Resources */,
+				8422FE582A8E7A4A00DD1150 /* LaunchScreen.storyboard in Resources */,
 				F9AC1E02A4184B2AB01A58D0 /* Inter-Regular.ttf in Resources */,
 				A8492D7BC3F94274A81C434B /* Inter-SemiBold.ttf in Resources */,
+				8422FE542A8E7A3900DD1150 /* Images.xcassets in Resources */,
+				8422FE5C2A8E7A6600DD1150 /* TruPaidAppTests in Resources */,
 				D8990C940E204A03A6EEB6C1 /* Oxanium-Medium.ttf in Resources */,
 				C8CA887A60C546F1808F3A37 /* Rubik-Medium.ttf in Resources */,
 				5B53E929BA3F4A8AA9ACD27F /* Rubik-Regular.ttf in Resources */,
@@ -488,7 +474,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* TruPaidTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,8 +481,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				8422FE5A2A8E7A5200DD1150 /* main.m in Sources */,
+				8422FE522A8E7A2E00DD1150 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,13 +501,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBEA3E3149F13536ACD049EB /* Pods-TruPaid-TruPaidTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TruPaidTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,10 +529,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F98B7494258AC089674DF8B8 /* Pods-TruPaid-TruPaidTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = TruPaidTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,9 +557,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 20;
-				DEVELOPMENT_TEAM = 9B79JUZD4W;
+				DEVELOPMENT_TEAM = HF6HCBVT37;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TruPaid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TruPaid;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,8 +586,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 20;
-				DEVELOPMENT_TEAM = 9B79JUZD4W;
+				DEVELOPMENT_TEAM = HF6HCBVT37;
 				INFOPLIST_FILE = TruPaid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TruPaid;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -667,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -725,7 +714,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -763,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TruPaid" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TruPaidApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
