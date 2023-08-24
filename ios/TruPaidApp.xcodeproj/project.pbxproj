@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		08B6C1E937CE40D29722C520 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7CF0F1F895E4B879C03E6EF /* Inter-Light.ttf */; };
-		204089003FDA17A6DA7780D2 /* libPods-TruPaid-TruPaidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAF7F0A5514F3AA62460B56 /* libPods-TruPaid-TruPaidTests.a */; };
+		204089003FDA17A6DA7780D2 /* libPods-TruPaidApp-TruPaidAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAF7F0A5514F3AA62460B56 /* libPods-TruPaidApp-TruPaidAppTests.a */; };
 		334AAEF32CEB47DE8DB1C657 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3001F165082D4397A2EED449 /* Gilroy-Bold.ttf */; };
 		34B9391E152842E4ADCFD673 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09D77E9BA630447199F92493 /* Inter-Bold.ttf */; };
-		5811B3641D58E6155C1282DD /* libPods-TruPaid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B75607163D1105727386CFD3 /* libPods-TruPaid.a */; };
+		5811B3641D58E6155C1282DD /* libPods-TruPaidApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B75607163D1105727386CFD3 /* libPods-TruPaidApp.a */; };
 		5B53E929BA3F4A8AA9ACD27F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D47BAB3A7354F7D99A3BC81 /* Rubik-Regular.ttf */; };
 		61774187EC6E4640BFBFF7DC /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2C89E8110F4106B1A866F1 /* Inter-Medium.ttf */; };
 		8410AE542A8F045D0066501B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8410AE532A8F045D0066501B /* Info.plist */; };
@@ -39,21 +39,21 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = TruPaid;
+			remoteInfo = TruPaidApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* TruPaidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruPaidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* TruPaidAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruPaidAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D77E9BA630447199F92493 /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* TruPaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruPaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* TruPaidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruPaidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D47BAB3A7354F7D99A3BC81 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../src/assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		24113C6CC67C4603891DF09A /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		2EDB5F02671B4E80BD8CE5A4 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Medium.ttf"; path = "../src/assets/fonts/Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		3001F165082D4397A2EED449 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Bold.ttf"; path = "../src/assets/fonts/Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		7994B6F0BA6B4814BFBA4218 /* Gilroy-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Light.ttf"; path = "../src/assets/fonts/Gilroy-Light.ttf"; sourceTree = "<group>"; };
 		83C80A7B97F74D3597C1580A /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Regular.ttf"; path = "../src/assets/fonts/Gilroy-Regular.ttf"; sourceTree = "<group>"; };
-		83E3E1CCC4E6727C952593F4 /* Pods-TruPaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaid.debug.xcconfig"; path = "Target Support Files/Pods-TruPaid/Pods-TruPaid.debug.xcconfig"; sourceTree = "<group>"; };
+		83E3E1CCC4E6727C952593F4 /* Pods-TruPaidApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaidApp.debug.xcconfig"; path = "Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8410AE532A8F045D0066501B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TruPaidApp/Info.plist; sourceTree = "<group>"; };
 		8422FE502A8E7A2E00DD1150 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TruPaidApp/AppDelegate.h; sourceTree = "<group>"; };
 		8422FE512A8E7A2E00DD1150 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TruPaidApp/AppDelegate.m; sourceTree = "<group>"; };
@@ -69,13 +69,13 @@
 		A7CF0F1F895E4B879C03E6EF /* Inter-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Light.ttf"; path = "../src/assets/fonts/Inter-Light.ttf"; sourceTree = "<group>"; };
 		AE9FE9B4269ECF1E003E65D8 /* AppCenter-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		AEDB150526FE23880089C331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B75607163D1105727386CFD3 /* libPods-TruPaid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TruPaid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6FBDD1D44FD0076BC6BAC7A /* Pods-TruPaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaid.release.xcconfig"; path = "Target Support Files/Pods-TruPaid/Pods-TruPaid.release.xcconfig"; sourceTree = "<group>"; };
-		DCAF7F0A5514F3AA62460B56 /* libPods-TruPaid-TruPaidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TruPaid-TruPaidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75607163D1105727386CFD3 /* libPods-TruPaidApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TruPaidApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FBDD1D44FD0076BC6BAC7A /* Pods-TruPaidApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaidApp.release.xcconfig"; path = "Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp.release.xcconfig"; sourceTree = "<group>"; };
+		DCAF7F0A5514F3AA62460B56 /* libPods-TruPaidApp-TruPaidAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TruPaidApp-TruPaidAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED9584C68FA9482C8F034527 /* TestPitchSans-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TestPitchSans-Bold.otf"; path = "../src/assets/fonts/TestPitchSans-Bold.otf"; sourceTree = "<group>"; };
-		F98B7494258AC089674DF8B8 /* Pods-TruPaid-TruPaidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaid-TruPaidTests.release.xcconfig"; path = "Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests.release.xcconfig"; sourceTree = "<group>"; };
-		FBEA3E3149F13536ACD049EB /* Pods-TruPaid-TruPaidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaid-TruPaidTests.debug.xcconfig"; path = "Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F98B7494258AC089674DF8B8 /* Pods-TruPaidApp-TruPaidAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaidApp-TruPaidAppTests.release.xcconfig"; path = "Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBEA3E3149F13536ACD049EB /* Pods-TruPaidApp-TruPaidAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruPaidApp-TruPaidAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				204089003FDA17A6DA7780D2 /* libPods-TruPaid-TruPaidTests.a in Frameworks */,
+				204089003FDA17A6DA7780D2 /* libPods-TruPaidApp-TruPaidAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,14 +91,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5811B3641D58E6155C1282DD /* libPods-TruPaid.a in Frameworks */,
+				5811B3641D58E6155C1282DD /* libPods-TruPaidApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* TruPaid */ = {
+		13B07FAE1A68108700A75B9A /* TruPaidApp */ = {
 			isa = PBXGroup;
 			children = (
 				8410AE532A8F045D0066501B /* Info.plist */,
@@ -110,7 +110,7 @@
 				8422FE572A8E7A4A00DD1150 /* LaunchScreen.storyboard */,
 				8422FE592A8E7A5200DD1150 /* main.m */,
 			);
-			name = TruPaid;
+			name = TruPaidApp;
 			sourceTree = "<group>";
 		};
 		177D9F4D79E649E4BEEF4E68 /* Resources */ = {
@@ -138,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				B75607163D1105727386CFD3 /* libPods-TruPaid.a */,
-				DCAF7F0A5514F3AA62460B56 /* libPods-TruPaid-TruPaidTests.a */,
+				B75607163D1105727386CFD3 /* libPods-TruPaidApp.a */,
+				DCAF7F0A5514F3AA62460B56 /* libPods-TruPaidApp-TruPaidAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,10 +147,10 @@
 		3632BA58C8B09688AD7AB752 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				83E3E1CCC4E6727C952593F4 /* Pods-TruPaid.debug.xcconfig */,
-				D6FBDD1D44FD0076BC6BAC7A /* Pods-TruPaid.release.xcconfig */,
-				FBEA3E3149F13536ACD049EB /* Pods-TruPaid-TruPaidTests.debug.xcconfig */,
-				F98B7494258AC089674DF8B8 /* Pods-TruPaid-TruPaidTests.release.xcconfig */,
+				83E3E1CCC4E6727C952593F4 /* Pods-TruPaidApp.debug.xcconfig */,
+				D6FBDD1D44FD0076BC6BAC7A /* Pods-TruPaidApp.release.xcconfig */,
+				FBEA3E3149F13536ACD049EB /* Pods-TruPaidApp-TruPaidAppTests.debug.xcconfig */,
+				F98B7494258AC089674DF8B8 /* Pods-TruPaidApp-TruPaidAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8422FE5B2A8E7A6600DD1150 /* TruPaidAppTests */,
-				13B07FAE1A68108700A75B9A /* TruPaid */,
+				13B07FAE1A68108700A75B9A /* TruPaidApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -181,8 +181,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* TruPaid.app */,
-				00E356EE1AD99517003FC87E /* TruPaidTests.xctest */,
+				13B07F961A680F5B00A75B9A /* TruPaidApp.app */,
+				00E356EE1AD99517003FC87E /* TruPaidAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* TruPaidTests */ = {
+		00E356ED1AD99517003FC87E /* TruPaidAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TruPaidTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TruPaidAppTests" */;
 			buildPhases = (
 				758EEE8FA3EF4554CD7004E5 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -206,14 +206,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = TruPaidTests;
-			productName = TruPaidTests;
-			productReference = 00E356EE1AD99517003FC87E /* TruPaidTests.xctest */;
+			name = TruPaidAppTests;
+			productName = TruPaidAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* TruPaidAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* TruPaid */ = {
+		13B07F861A680F5B00A75B9A /* TruPaidApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TruPaid" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TruPaidApp" */;
 			buildPhases = (
 				7A8FD53A6A76F8AB6DC9E5BA /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -229,9 +229,9 @@
 			);
 			dependencies = (
 			);
-			name = TruPaid;
-			productName = TruPaid;
-			productReference = 13B07F961A680F5B00A75B9A /* TruPaid.app */;
+			name = TruPaidApp;
+			productName = TruPaidApp;
+			productReference = 13B07F961A680F5B00A75B9A /* TruPaidApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -265,8 +265,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* TruPaid */,
-				00E356ED1AD99517003FC87E /* TruPaidTests */,
+				13B07F861A680F5B00A75B9A /* TruPaidApp */,
+				00E356ED1AD99517003FC87E /* TruPaidAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -329,15 +329,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		48C689CB451AF416494CA2CC /* [CP] Copy Pods Resources */ = {
@@ -346,15 +346,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid/Pods-TruPaid-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid/Pods-TruPaid-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaid/Pods-TruPaid-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		500AE232A0DFDD2F110218AA /* [CP-User] [RNFB] Core Configuration */ = {
@@ -385,7 +385,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TruPaid-TruPaidTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TruPaidApp-TruPaidAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,7 +407,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TruPaid-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TruPaidApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -420,15 +420,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid/Pods-TruPaid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid/Pods-TruPaid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaid/Pods-TruPaid-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp/Pods-TruPaidApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2DD65BC981CDCFE457166D7 /* [CP] Copy Pods Resources */ = {
@@ -437,15 +437,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaid-TruPaidTests/Pods-TruPaid-TruPaidTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruPaidApp-TruPaidAppTests/Pods-TruPaidApp-TruPaidAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -491,7 +491,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* TruPaid */;
+			target = 13B07F861A680F5B00A75B9A /* TruPaidApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -499,7 +499,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBEA3E3149F13536ACD049EB /* Pods-TruPaid-TruPaidTests.debug.xcconfig */;
+			baseConfigurationReference = FBEA3E3149F13536ACD049EB /* Pods-TruPaidApp-TruPaidAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,7 +507,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TruPaidTests/Info.plist;
+				INFOPLIST_FILE = TruPaidAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,18 +521,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruPaid.app/TruPaid";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruPaidApp.app/TruPaidApp";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F98B7494258AC089674DF8B8 /* Pods-TruPaid-TruPaidTests.release.xcconfig */;
+			baseConfigurationReference = F98B7494258AC089674DF8B8 /* Pods-TruPaidApp-TruPaidAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = TruPaidTests/Info.plist;
+				INFOPLIST_FILE = TruPaidAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,21 +546,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruPaid.app/TruPaid";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruPaidApp.app/TruPaidApp";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83E3E1CCC4E6727C952593F4 /* Pods-TruPaid.debug.xcconfig */;
+			baseConfigurationReference = 83E3E1CCC4E6727C952593F4 /* Pods-TruPaidApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = HF6HCBVT37;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = TruPaid/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TruPaid;
+				INFOPLIST_FILE = TruPaidApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TruPaidApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,8 +571,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trupaiddev.app;
-				PRODUCT_NAME = TruPaid;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TruPaidAppdev.app;
+				PRODUCT_NAME = TruPaidApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -581,14 +581,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6FBDD1D44FD0076BC6BAC7A /* Pods-TruPaid.release.xcconfig */;
+			baseConfigurationReference = D6FBDD1D44FD0076BC6BAC7A /* Pods-TruPaidApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = HF6HCBVT37;
-				INFOPLIST_FILE = TruPaid/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TruPaid;
+				INFOPLIST_FILE = TruPaidApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TruPaidApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,8 +600,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trupaiddev.app;
-				PRODUCT_NAME = TruPaid;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TruPaidAppdev.app;
+				PRODUCT_NAME = TruPaidApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -734,7 +734,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TruPaidTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TruPaidAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -743,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TruPaid" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TruPaidApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,

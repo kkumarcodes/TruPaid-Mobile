@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '11.0'
 
-target 'TruPaid' do
+target 'TruPaidApp' do
   pod 'Plaid', '~> 2.2.2'
 
   config = use_native_modules!
@@ -14,7 +14,7 @@ target 'TruPaid' do
     :hermes_enabled => false
   )
 
-  target 'TruPaidTests' do
+  target 'TruPaidAppTests' do
     inherit! :complete
     # Pods for testing
   end
