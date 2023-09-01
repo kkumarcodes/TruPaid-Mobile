@@ -17,7 +17,7 @@ import {navigation} from '../../../routes/navigation';
 import LinearGradient from 'react-native-linear-gradient';
 import {PADDING_HOR, WINDOW_HEIGHT} from '../../../styles/constant';
 import {useDispatch} from 'react-redux';
-import CameraRoll from '@react-native-community/cameraroll';
+import {CameraRoll} from "@react-native-camera-roll/camera-roll";
 import {useFocusEffect} from '@react-navigation/native';
 import {CommonStyle} from '../../../styles';
 

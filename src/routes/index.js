@@ -5,7 +5,6 @@ import {
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
-import analytics from '@react-native-firebase/analytics';
 import { _navigationRef, navigation, setIsNavigationReady } from './navigation';
 
 import SplashScreen from '../screens/splash';
@@ -43,6 +42,7 @@ const Route = () => {
   }, []);
 
   const chooseScreen = (state) => {
+    
     if (state.auth.landingPage) {
       return (
         <>
@@ -160,10 +160,7 @@ const Route = () => {
           const currentRouteName = navigation.getNavigate().current.getCurrentRoute()?.name;
 
           if (previousRouteName !== currentRouteName) {
-            //  await analytics().logScreenView({
-            //    screen_name: currentRouteName,
-            //    screen_class: currentRouteName,
-            //  });
+
           }
           routeNameRef.current = currentRouteName;
         }}

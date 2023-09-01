@@ -10,8 +10,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {loadSignUp} from '../../../redux/actions/auth';
 import {updateBankAccount} from '../../../redux/actions/plaid';
 import DeviceInfo from 'react-native-device-info';
-import codePush from 'react-native-code-push';
-import analytics from '@react-native-firebase/analytics';
 
 const SettingScreen = (props) => {
   const dispatch = useDispatch();
@@ -25,12 +23,6 @@ const SettingScreen = (props) => {
     const version = DeviceInfo.getVersion();
     setVersion(version);
     setBuildNumber(buildNumber);
-
-    codePush.getUpdateMetadata().then((update) => {
-      if (update) {
-        setCodePushVersion(update.label);
-      }
-    });
 
   }, []);
 
