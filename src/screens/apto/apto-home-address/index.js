@@ -8,7 +8,7 @@ import {
   ScrollView,
   LogBox,
 } from 'react-native';
-import {GOOGLE_API_KEY} from "@env"
+// import {GOOGLE_API_KEY} from "@env"
 import {Theme} from '../../../styles/theme';
 import {PADDING_HOR, WINDOW_HEIGHT} from '../../../styles/constant';
 import {navigation} from '../../../routes/navigation';
@@ -17,6 +17,7 @@ import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
 import {CommonStyle} from '../../../styles';
 import {setAddress as setAptoAddress} from '../../../redux/actions/apto';
 
+GOOGLE_API_KEY = 'AIzaSyBHlEBeRKJvItmHK7HK6zCUa475I4UDyHQ'
 const AptoHomeAddressScreen = () => {
   const dispatch = useDispatch();
   const [isValid, setValid] = useState(false);
