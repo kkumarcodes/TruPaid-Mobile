@@ -1,15 +1,15 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import {
   StatusBar,
 } from 'react-native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-import {useSelector, useDispatch} from 'react-redux';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { useSelector, useDispatch } from 'react-redux';
 import analytics from '@react-native-firebase/analytics';
-import {_navigationRef, navigation, setIsNavigationReady} from './navigation';
+import { _navigationRef, navigation, setIsNavigationReady } from './navigation';
 
 import SplashScreen from '../screens/splash';
-import {Theme} from '../styles/theme';
+import { Theme } from '../styles/theme';
 import SignUpScreen from '../screens/auth/signup';
 import RegisterCardScreen from '../screens/auth/register-card';
 import ChooseAccountScreen from '../screens/auth/choose-account';
@@ -46,16 +46,16 @@ const Route = () => {
     if (state.auth.landingPage) {
       return (
         <>
-          <StatusBar barStyle="dark-content" translucent backgroundColor="transparent"/>
-          <SplashScreen/>
+          <StatusBar barStyle="dark-content" translucent backgroundColor="transparent" />
+          <SplashScreen />
         </>
       );
     } else if (state.auth.signUpPage) {
       return (
         <>
-          <StatusBar barStyle="dark-content" translucent backgroundColor={Theme.primary}/>
+          <StatusBar barStyle="dark-content" translucent backgroundColor={Theme.primary} />
           <Stack.Navigator
-            screenOptions={{headerShown: false}}>
+            screenOptions={{ headerShown: false }}>
             <Stack.Screen
               name="Login"
               component={LoginScreen}
@@ -135,13 +135,13 @@ const Route = () => {
     } else if (state.auth.homePage) {
       return (
         <>
-          <StatusBar barStyle="dark-content" translucent backgroundColor={Theme.primary}/>
+          <StatusBar barStyle="dark-content" translucent backgroundColor={Theme.primary} />
           <Stack.Navigator
-            screenOptions={{headerShown: false}}>
+            screenOptions={{ headerShown: false }}>
             <Stack.Screen
               name="HomeNavigator"
               component={HomeNavigator}
-              options={{gestureEnabled: false}}
+              options={{ gestureEnabled: false }}
             />
           </Stack.Navigator>
         </>
@@ -152,24 +152,24 @@ const Route = () => {
   return (
     <React.Fragment>
       <NavigationContainer ref={_navigationRef}
-                           onReady={() => {
-                             routeNameRef.current = navigation.getNavigate().current.getCurrentRoute()?.name;
-                           }}
-                           onStateChange={async () => {
-                             const previousRouteName = routeNameRef.current;
-                             const currentRouteName = navigation.getNavigate().current.getCurrentRoute()?.name;
+        onReady={() => {
+          routeNameRef.current = navigation.getNavigate().current.getCurrentRoute()?.name;
+        }}
+        onStateChange={async () => {
+          const previousRouteName = routeNameRef.current;
+          const currentRouteName = navigation.getNavigate().current.getCurrentRoute()?.name;
 
-                             if (previousRouteName !== currentRouteName) {
-                              //  await analytics().logScreenView({
-                              //    screen_name: currentRouteName,
-                              //    screen_class: currentRouteName,
-                              //  });
-                             }
-                             routeNameRef.current = currentRouteName;
-                           }}
+          if (previousRouteName !== currentRouteName) {
+            //  await analytics().logScreenView({
+            //    screen_name: currentRouteName,
+            //    screen_class: currentRouteName,
+            //  });
+          }
+          routeNameRef.current = currentRouteName;
+        }}
       >
         {chooseScreen(state)}
-        <ApiLoading/>
+        <ApiLoading />
 
       </NavigationContainer>
     </React.Fragment>
