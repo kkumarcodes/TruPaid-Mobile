@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@andordavoti/react-native-timeago": "^0.0.14",
     "@apollo/client": "^3.8.1",
     "@react-native-async-storage/async-storage": "^1.19.3",
     "@react-native-camera-roll/camera-roll": "^5.7.2",
@@ -54,7 +55,8 @@
     "react-native-switch": "^1.5.1",
     "react-native-toast-message": "^2.1.6",
     "react-redux": "^8.1.2",
-    "redux": "^4.2.1"
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.8"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
