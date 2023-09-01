@@ -4,7 +4,6 @@ import {useDispatch} from 'react-redux';
 import {Theme} from '../../../styles/theme';
 import {PADDING_HOR, WINDOW_HEIGHT, WINDOW_WIDTH} from '../../../styles/constant';
 import {CommonStyle} from '../../../styles';
-import Cardscan from 'react-native-cardscan';
 import TopNavHeader from '../../../components/top-nav-header';
 import {navigation} from '../../../routes/navigation';
 import { Platform } from 'react-native';
@@ -39,7 +38,10 @@ const ScanCardScreen = () => {
   }, [compatible]);
 
   const scanCard = useCallback(async () => {
-    const {action, scanId, payload, canceledReason} = await Cardscan.scan();
+    const action = 'canceled'
+    const scanId = ''
+    const payload = {}
+    const canceledReason = 'enter_card_manually'
     setRecentAction(action);
     if (action === 'scanned') {
       var issuer = payload.issuer || '??';
@@ -139,8 +141,7 @@ const ScanCardScreen = () => {
   }, [setCard, setRecentAction]);
 
   const checkCompatible = useCallback(async () => {
-    const isCompatible = await Cardscan.isSupportedAsync();
-    setCompatible(isCompatible);
+    setCompatible(true);
   }, [setCompatible]);
 
   useEffect(() => {
@@ -189,15 +190,15 @@ const ScanCardScreen = () => {
     <View style={styles.container}>
       <StatusBar hidden={false} translucent={true} backgroundColor={'transparent'}/>
 
-      {/*<TopNavHeader onPressLeft={onPressLeft} leftIcon={Theme.arrow_left} title={'Scan card'}/>*/}
+      <TopNavHeader onPressLeft={onPressLeft} leftIcon={Theme.arrow_left} title={'Scan card'}/>
 
-      {/*{HeaderLayout()}*/}
+      {HeaderLayout()}
 
-      {/*<View style={[CommonStyle.center, {flex: 1}]}>*/}
-      {/*  <Image source={Theme.card_frame} style={styles.card}/>*/}
-      {/*</View>*/}
+      <View style={[CommonStyle.center, {flex: 1}]}>
+       <Image source={Theme.card_frame} style={styles.card}/>
+      </View>
 
-      {/*{CaptureButton()}*/}
+      {CaptureButton()}
     </View>
   );
 };
