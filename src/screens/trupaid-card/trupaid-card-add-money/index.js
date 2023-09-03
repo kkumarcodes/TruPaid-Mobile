@@ -27,7 +27,7 @@ import {
 } from '../../../utils/ApiAptoKit';
 import {setPaymentSource as setPaymentSourceRedux} from '../../../redux/actions/apto';
 
-const ReveelCardAddMoneyScreen = () => {
+const TruPaidCardAddMoneyScreen = () => {
   const issueCard = useSelector(state => state?.apto?.issueCard);
   const [money, setMoney] = useState('');
   const [paymentSource, setPaymentSource] = useState();
@@ -108,7 +108,7 @@ const ReveelCardAddMoneyScreen = () => {
         amount: parseFloat(money),
         balance_id: resBalance.data.id,
       })
-      navigation.navigate('ReveelCardSuccess', {amount: money});
+      navigation.navigate('TruPaidCardSuccess', {amount: money});
     } catch (error) {
       console.log(JSON.stringify(error))
       let message = '';
@@ -132,7 +132,7 @@ const ReveelCardAddMoneyScreen = () => {
 
   const addNewCardHandler = () => {
     refRBSheet.current.close()
-    navigation.navigate('ReveelCardAddNew');
+    navigation.navigate('TruPaidCardAddNew');
   }
 
   const selectCardHandler = (index) => {
@@ -155,7 +155,7 @@ const ReveelCardAddMoneyScreen = () => {
         </View>
         <TouchableOpacity
           style={styles.rightIconWrapper}
-          onPress={() => navigation.navigate('ReveelCardAddNew')}
+          onPress={() => navigation.navigate('TruPaidCardAddNew')}
         >
           <Text style={[CommonStyle.text14_inter_m, {color: Theme.primary}]}>
             Add
@@ -165,7 +165,7 @@ const ReveelCardAddMoneyScreen = () => {
     );
   };
 
-  const MainReveelCard = (paymentSource) => {
+  const MainTruPaidCard = (paymentSource) => {
 
     return (
       <View style={[styles.inputWrapper]}>
@@ -305,7 +305,7 @@ const ReveelCardAddMoneyScreen = () => {
 
           <View style={{marginTop: (WINDOW_HEIGHT - 100) * 0.1}}>
             {allPaymentSources.length === 0 && NoPaymentMethodCard()}
-            {paymentSource && MainReveelCard(paymentSource)}
+            {paymentSource && MainTruPaidCard(paymentSource)}
           </View>
         </ScrollView>
 
@@ -367,4 +367,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ReveelCardAddMoneyScreen;
+export default TruPaidCardAddMoneyScreen;

@@ -28,7 +28,7 @@ import {
 import Route from './src/routes';
 import { Provider } from 'react-redux';
 import Toast from 'react-native-toast-message';
-import { store } from './src/redux';
+import { store } from './src/redux/store';
 import { Theme } from './src/styles/theme';
 import { CommonStyle } from './src/styles';
 import { ApolloProvider } from '@apollo/client';
@@ -82,18 +82,12 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <Provider store={store}>
-        <ApolloProvider client={apolloClient}>
-          <Route />
-        </ApolloProvider>
-        <Toast config={toastConfig} ref={(ref) => Toast.setRef(ref)} />
-      </Provider>
-    </SafeAreaView>
+    <Provider store={store}>
+      <ApolloProvider client={apolloClient}>
+        <Route />
+      </ApolloProvider>
+      <Toast config={toastConfig} />
+    </Provider>
   );
 }
 

@@ -1,23 +1,23 @@
-import React, {useEffect, useState} from 'react';
-import {View, StyleSheet, StatusBar, Text, ScrollView, TouchableOpacity} from 'react-native';
-import {useDispatch} from 'react-redux';
-import {Theme} from '../../../styles/theme';
-import {PADDING_HOR, WINDOW_HEIGHT, WINDOW_WIDTH} from '../../../styles/constant';
-import {CommonStyle} from '../../../styles';
+import React, { useEffect, useState } from 'react';
+import { View, StyleSheet, StatusBar, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { useDispatch } from 'react-redux';
+import { Theme } from '../../../styles/theme';
+import { PADDING_HOR, WINDOW_HEIGHT, WINDOW_WIDTH } from '../../../styles/constant';
+import { CommonStyle } from '../../../styles';
 import MainButton from '../../../components/main-button';
-import {navigation} from '../../../routes/navigation';
-import {KeyboardAvoidingView} from 'react-native';
-import {Platform} from 'react-native';
-import {validateEmail, validatePassword} from '../../../styles/global';
-import {setApiLoading} from '../../../redux/actions/config';
+import { navigation } from '../../../routes/navigation';
+import { KeyboardAvoidingView } from 'react-native';
+import { Platform } from 'react-native';
+import { validateEmail, validatePassword } from '../../../styles/global';
+import { setApiLoading } from '../../../redux/actions/config';
 import ApiFlowKit from '../../../utils/ApiFlowKit';
 import ApiAuthKit from '../../../utils/ApiAuthKit';
 import Toast from 'react-native-toast-message';
-import {setGraphqlToken} from '../../../utils/ApiGraphqlKit';
-import {loadHome, updateUserInfo} from '../../../redux/actions/auth';
+import { setGraphqlToken } from '../../../utils/ApiGraphqlKit';
+import { loadHome, updateUserInfo } from '../../../redux/actions/auth';
 import InputCardBox from '../../../components/input-card-box';
 import InputTextCard from '../../../components/input-text-card';
-import {setApiReveelToken} from '../../../utils/ApiReveelKit';
+import { setApiTruPaidToken } from '../../../utils/ApiTruPaidKit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import analytics from '@react-native-firebase/analytics';
 
@@ -31,6 +31,7 @@ const LoginScreen = (props) => {
   const [icEye, setIcEye] = useState(Theme.icon_eye_on);
 
   useEffect(() => {
+    console.log('==login screen')
   }, []);
 
   useEffect(() => {
@@ -102,7 +103,7 @@ const LoginScreen = (props) => {
       console.log('trupaid login success: session token: ', res?.data?.session_token);
 
       await setGraphqlToken(res?.data?.session_token);
-      await setApiReveelToken(res?.data?.session_token);
+      await setApiTruPaidToken(res?.data?.session_token);
       await AsyncStorage.setItem('@trupaid_email', email);
       await AsyncStorage.setItem('@trupaid_password', password);
       dispatch(updateUserInfo(res?.data));
@@ -131,8 +132,8 @@ const LoginScreen = (props) => {
   const HeaderLayout = () => {
     return (
       <View style={styles.headerContainer}>
-        <Text style={styles.textReveel}>
-          REVEEL
+        <Text style={styles.textTruPaid}>
+          TRUPAID
         </Text>
       </View>
     );
@@ -140,11 +141,11 @@ const LoginScreen = (props) => {
 
   const InputLayout = () => {
     return (
-      <View style={{flex: 1}}>
-        <Text style={[CommonStyle.text24_inter_m, {textAlign: 'center'}]}>
+      <View style={{ flex: 1 }}>
+        <Text style={[CommonStyle.text24_inter_m, { textAlign: 'center' }]}>
           Sign in
         </Text>
-        <View style={{marginTop: WINDOW_HEIGHT * 0.07}}>
+        <View style={{ marginTop: WINDOW_HEIGHT * 0.07 }}>
           <InputCardBox
             header={'Email'}
             placeholder={'Your email'}
@@ -155,7 +156,7 @@ const LoginScreen = (props) => {
           />
         </View>
 
-        <View style={{marginTop: 16}}>
+        <View style={{ marginTop: 16 }}>
           <InputTextCard
             header={'Password'}
             placeholder={'Your password'}
@@ -167,7 +168,7 @@ const LoginScreen = (props) => {
           />
         </View>
 
-        <View style={{alignSelf: 'flex-start'}}>
+        <View style={{ alignSelf: 'flex-start' }}>
           <TouchableOpacity
             onPress={() => navigation.navigate('ResetPassword')}
           >
@@ -186,9 +187,9 @@ const LoginScreen = (props) => {
 
   const SignUpButton = () => {
     return (
-      <View style={[CommonStyle.row, {paddingTop: 5, alignSelf: 'center'}]}>
-        <Text style={[CommonStyle.text14_inter_r, {paddingLeft: 3}]}>
-          New to Reveel?
+      <View style={[CommonStyle.row, { paddingTop: 5, alignSelf: 'center' }]}>
+        <Text style={[CommonStyle.text14_inter_r, { paddingLeft: 3 }]}>
+          New to TruPaid?
         </Text>
         <TouchableOpacity
           onPress={() => navigation.navigate('SignUp')}
@@ -207,13 +208,13 @@ const LoginScreen = (props) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar hidden={false} translucent={true} backgroundColor={'transparent'}/>
+      <StatusBar hidden={false} translucent={true} backgroundColor={'transparent'} />
 
-      <View style={{height: WINDOW_HEIGHT * 0.05, minHeight: 15, backgroundColor: Theme.white}}/>
+      <View style={{ height: WINDOW_HEIGHT * 0.05, minHeight: 15, backgroundColor: Theme.white }} />
 
       {HeaderLayout()}
 
-      <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{flex: 1}}>
+      <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
         <ScrollView
           showsVerticalScrollIndicator={false}
           bounces={'alwaysBounce'}
@@ -223,7 +224,7 @@ const LoginScreen = (props) => {
 
             {InputLayout()}
 
-            <View style={{height: 20}}/>
+            <View style={{ height: 20 }} />
 
           </View>
 
@@ -268,7 +269,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     backgroundColor: Theme.white,
   },
-  textReveel: {
+  textTruPaid: {
     fontSize: 18,
     fontFamily: 'TestPitchSans-Bold',
     color: '#222222',

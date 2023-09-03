@@ -1,10 +1,10 @@
-import {SET_PLAID_ACCESS_TOKEN, UPDATE_BANK_ACCOUNT} from '../actions/actionType';
+import { SET_PLAID_ACCESS_TOKEN, UPDATE_BANK_ACCOUNT } from '../actions/actionType';
 
 const initialState = {
   bank_accounts: [],
 };
 
-export const plaidReducer = (state = initialState, {type, payload}) => {
+export const plaidReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case SET_PLAID_ACCESS_TOKEN:
       return {

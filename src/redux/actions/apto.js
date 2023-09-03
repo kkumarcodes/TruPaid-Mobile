@@ -8,7 +8,7 @@ import {
   SET_APTO_BIRTHDATE,
   SET_APTO_SSN,
   SET_APTO_ISSUE_CARD,
-  SET_REVEELAPTO_ID,
+  SET_TRUPAIDAPTO_ID,
   SET_PAYMENTSOURCE,
 } from './actionType';
 
@@ -75,9 +75,9 @@ export const setIssueCard = payload => dispatch => {
   });
 };
 
-export const setReveelAptoId = payload => dispatch => {
+export const setTruPaidAptoId = payload => dispatch => {
   dispatch({
-    type: SET_REVEELAPTO_ID,
+    type: SET_TRUPAIDAPTO_ID,
     payload: payload,
   });
 };

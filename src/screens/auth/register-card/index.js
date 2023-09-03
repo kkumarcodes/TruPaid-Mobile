@@ -23,7 +23,7 @@ const RegisterCardScreen = () => {
     return (
       <View style={styles.headerContainer}>
         <Text style={[CommonStyle.text15_inter_r, {color: Theme.grey, lineHeight: 33, letterSpacing: -0.3}]}>
-          Introducing your new Reveel card
+          Introducing your new TruPaid card
         </Text>
         <Text style={[CommonStyle.text27_inter_b, {lineHeight: 33, letterSpacing: -0.3}]}>
           Welcome to the club!

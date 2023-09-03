@@ -16,15 +16,15 @@ import MainButton from '../../../components/main-button';
 import {CommonStyle} from '../../../styles';
 import {numberWithCommas} from '../../../styles/global';
 
-const ReveelCardSuccessScreen = (props) => {
+const TruPaidCardSuccessScreen = (props) => {
   const amount = props.route.params?.amount;
 
   const onPressLeft = () => {
-    navigation.navigate('ReveelCard');
+    navigation.navigate('TruPaidCard');
   };
 
   const onPressDone = () => {
-    navigation.navigate('ReveelCard');
+    navigation.navigate('TruPaidCard');
   };
 
   return (
@@ -85,4 +85,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ReveelCardSuccessScreen;
+export default TruPaidCardSuccessScreen;

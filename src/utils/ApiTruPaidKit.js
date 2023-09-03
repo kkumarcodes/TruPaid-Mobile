@@ -6,7 +6,7 @@ export const API_ENDPOINT = __DEV__
   ? API_ENDPOINT_STAGING
   : API_ENDPOINT_PRODUCT;
 
-const ApiReveelKit = axios.create({
+const ApiTruPaidKit = axios.create({
   baseURL: API_ENDPOINT,
   timeout: 30000,
   headers: {
@@ -16,17 +16,17 @@ const ApiReveelKit = axios.create({
   },
 });
 
-export const setApiReveelToken = token => {
+export const setApiTruPaidToken = token => {
   return new Promise(async (resolve) => {
     if (token) {
-      ApiReveelKit.defaults.headers.Authorization = 'Bearer ' + token;
+      ApiTruPaidKit.defaults.headers.Authorization = 'Bearer ' + token;
       try {
         await AsyncStorage.setItem('@trupaid_token', token);
       } catch (e) {
       }
       resolve();
     } else {
-      delete ApiReveelKit.defaults.headers.Authorization;
+      delete ApiTruPaidKit.defaults.headers.Authorization;
       try {
         await AsyncStorage.removeItem('@trupaid_token');
       } catch (e) {
@@ -36,4 +36,4 @@ export const setApiReveelToken = token => {
   });
 };
 
-export default ApiReveelKit;
+export default ApiTruPaidKit;

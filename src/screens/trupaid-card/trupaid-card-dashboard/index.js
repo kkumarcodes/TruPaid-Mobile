@@ -22,10 +22,10 @@ const CARD_NUMBER = [
   1656,
   1928,
 ];
-const ReveelCardDashboardScreen = () => {
+const TruPaidCardDashboardScreen = () => {
 
   const onPressAddFunds = () => {
-    navigation.navigate('ReveelCardManagement');
+    navigation.navigate('TruPaidCardManagement');
   };
 
   const CardNumber = () => {
@@ -56,7 +56,7 @@ const ReveelCardDashboardScreen = () => {
         >
           <View style={styles.titleContainer}>
             <Text style={[CommonStyle.text27_inter_b, {color: Theme.black, paddingVertical: 10, letterSpacing: -0.3}]}>
-              {'Reveel card'}
+              {'TruPaid card'}
             </Text>
           </View>
         </LinearGradient>
@@ -69,7 +69,7 @@ const ReveelCardDashboardScreen = () => {
               start={{x: 0, y: 1}} end={{x: 1.0, y: 1.0}}
               locations={[0, 1]}
               colors={['#FFF', '#FFF']}
-              style={styles.cardReveel}
+              style={styles.cardTruPaid}
             >
               <View style={styles.cardInner}>
                 <View style={[CommonStyle.row_bw]}>
@@ -78,7 +78,7 @@ const ReveelCardDashboardScreen = () => {
                   </View>
                   <TouchableOpacity
                     style={styles.settingWrapper}
-                    onPress={() => navigation.navigate('ReveelCardManagement')}
+                    onPress={() => navigation.navigate('TruPaidCardManagement')}
                   >
                     <Image source={Theme.icon_setting} style={styles.iconSetting}/>
                   </TouchableOpacity>
@@ -163,7 +163,7 @@ const ReveelCardDashboardScreen = () => {
           <View style={styles.btnContainer}>
             <MainButton
               onPress={onPressAddFunds}
-              title={'Add funds to Reveel Card'}
+              title={'Add funds to TruPaid Card'}
               isValid={true}
             />
           </View>
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     width: WINDOW_WIDTH - PADDING_HOR * 2,
     height: (WINDOW_WIDTH - PADDING_HOR * 2) * 0.519,
   },
-  cardReveel: {
+  cardTruPaid: {
     width: WINDOW_WIDTH - PADDING_HOR * 2,
     height: (WINDOW_WIDTH - PADDING_HOR * 2) * 0.519,
     borderRadius: 12,
@@ -288,4 +288,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ReveelCardDashboardScreen;
+export default TruPaidCardDashboardScreen;

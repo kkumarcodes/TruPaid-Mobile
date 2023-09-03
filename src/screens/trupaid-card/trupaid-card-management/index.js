@@ -22,7 +22,7 @@ const MANAGEMENT_LIST = [
   {
     id: 1,
     title: 'Payment methods',
-    description: 'View, add, remove payment methods to fund Reveel Card',
+    description: 'View, add, remove payment methods to fund TruPaid Card',
     icon: Theme.icon_pig,
   },
   {
@@ -34,7 +34,7 @@ const MANAGEMENT_LIST = [
   {
     id: 3,
     title: 'My data',
-    description: 'Information associated with Reveel Card, including address, phone #, or email',
+    description: 'Information associated with TruPaid Card, including address, phone #, or email',
     icon: Theme.icon_user_data,
   },
 ];
@@ -43,7 +43,7 @@ const CARD_SETTING_LIST = [
   {
     id: 1,
     title: 'Security PIN',
-    description: 'Reset Reveel Card security PIN',
+    description: 'Reset TruPaid Card security PIN',
     icon: Theme.icon_lock,
   },
   {
@@ -54,20 +54,20 @@ const CARD_SETTING_LIST = [
   },
   {
     id: 3,
-    title: 'Get a plastic Reveel card',
+    title: 'Get a plastic TruPaid card',
     description: '',
     icon: Theme.icon_bell,
   },
   {
     id: 4,
-    title: 'Lock/unlock Reveel Card',
+    title: 'Lock/unlock TruPaid Card',
     description: '',
     icon: Theme.icon_user_lock,
   },
 ];
 
 
-const ReveelCardManagementScreen = () => {
+const TruPaidCardManagementScreen = () => {
   const refRBSheet = useRef();
 
   useEffect(() => {
@@ -268,7 +268,7 @@ const ReveelCardManagementScreen = () => {
                 onPress={() => {
                   refRBSheet.current.close();
                   setTimeout(() => {
-                    navigation.navigate('ReveelCardAddMoney');
+                    navigation.navigate('TruPaidCardAddMoney');
                   }, 200);
                 }}
                 style={{flex: 1}}
@@ -306,7 +306,7 @@ const ReveelCardManagementScreen = () => {
 
       <BasicNavHeader
         leftIcon={Theme.arrow_left}
-        title={'Reveel card management'}
+        title={'TruPaid card management'}
         onPressLeft={onPressLeft}
       />
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{flex: 1}}>
@@ -391,4 +391,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ReveelCardManagementScreen;
+export default TruPaidCardManagementScreen;

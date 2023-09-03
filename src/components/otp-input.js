@@ -1,8 +1,7 @@
 import React from 'react';
-import {StyleSheet, View, ViewPropTypes, TextInput} from 'react-native';
+import {StyleSheet, View, TextInput} from 'react-native';
 import PropTypes from 'prop-types';
 import {CommonStyle} from '../styles';
-import {Theme} from '../styles/theme';
 
 const OtpTextInput = function (props) {
   const {
@@ -63,8 +62,8 @@ OtpTextInput.defaultProps = {
 };
 
 OtpTextInput.propTypes = {
-  containerStyle: ViewPropTypes.style,
-  style: ViewPropTypes.style,
+  containerStyle: PropTypes.any,
+  style: PropTypes.any,
   LeftComponent: PropTypes.object,
   RightComponent: PropTypes.object,
   refCallback: PropTypes.func,

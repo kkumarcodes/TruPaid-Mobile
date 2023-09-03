@@ -1,4 +1,4 @@
-import {CommonActions, DrawerActions} from '@react-navigation/native';
+import { CommonActions, DrawerActions } from '@react-navigation/native';
 import React from 'react';
 
 let _isNavigationReady = false;
@@ -10,7 +10,7 @@ export const setIsNavigationReady = (isReady) => {
 };
 
 export const navigation = {
-  getNavigate () {
+  getNavigate() {
     return _navigationRef
   },
 
@@ -40,7 +40,7 @@ export const navigation = {
       CommonActions.reset({
         index: 0,
         // @ts-ignore
-        routes: [{name}],
+        routes: [{ name }],
       }),
     );
   },

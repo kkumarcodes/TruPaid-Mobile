@@ -196,7 +196,7 @@ const AptoLegalAgreementScreen = () => {
     navigation.navigate('AptoSuccess');
   };
   const onPressDecline = () => {
-    navigation.navigate('ReveelCard');
+    navigation.navigate('TruPaidCard');
   };
 
   const onPressLeft = () => {

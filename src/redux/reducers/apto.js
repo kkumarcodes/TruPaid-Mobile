@@ -8,7 +8,7 @@ import {
   SET_APTO_BIRTHDATE,
   SET_APTO_SSN,
   SET_APTO_ISSUE_CARD,
-  SET_REVEELAPTO_ID,
+  SET_TRUPAIDAPTO_ID,
   SET_PAYMENTSOURCE,
 } from '../actions/actionType';
 
@@ -33,33 +33,33 @@ const initialState = {
   paymentSource: null,
 };
 
-export const aptoReducer = (state = initialState, {type, payload}) => {
+export const aptoReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case SET_APTO_VERIFICATION_ID:
       return {
         ...state,
         verification_id: payload,
       };
-      
-      case SET_APTO_SECONDARY_VERIFICATION_ID:
-        return {
-          ...state,
-          secondary_verification_id: payload,
-        };
 
-      case SET_APTO_PHONE_NUMBER:
+    case SET_APTO_SECONDARY_VERIFICATION_ID:
+      return {
+        ...state,
+        secondary_verification_id: payload,
+      };
+
+    case SET_APTO_PHONE_NUMBER:
       return {
         ...state,
         phone_number: payload,
       };
 
-      case SET_APTO_COUNTRY_CODE:
+    case SET_APTO_COUNTRY_CODE:
       return {
         ...state,
         country_code: payload,
       };
 
-      case SET_APTO_NAME_EMAIL:
+    case SET_APTO_NAME_EMAIL:
       return {
         ...state,
         first_name: payload.first_name,
@@ -67,7 +67,7 @@ export const aptoReducer = (state = initialState, {type, payload}) => {
         email: payload.email,
       };
 
-      case SET_APTO_ADDRESS:
+    case SET_APTO_ADDRESS:
       return {
         ...state,
         street_one: payload.street_one,
@@ -78,31 +78,31 @@ export const aptoReducer = (state = initialState, {type, payload}) => {
         country: payload.country,
       };
 
-      case SET_APTO_BIRTHDATE:
+    case SET_APTO_BIRTHDATE:
       return {
         ...state,
         birthdate: payload,
       };
 
-      case SET_APTO_SSN:
+    case SET_APTO_SSN:
       return {
         ...state,
         ssn: payload,
       };
 
-      case SET_APTO_ISSUE_CARD:
+    case SET_APTO_ISSUE_CARD:
       return {
         ...state,
         issueCard: payload,
       };
 
-      case SET_REVEELAPTO_ID:
+    case SET_TRUPAIDAPTO_ID:
       return {
         ...state,
         trupaidAptoId: payload,
       };
 
-      case SET_PAYMENTSOURCE:
+    case SET_PAYMENTSOURCE:
       return {
         ...state,
         paymentSource: payload,

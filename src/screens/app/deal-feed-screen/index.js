@@ -271,7 +271,7 @@ const DealFeedScreen = () => {
 
       <FeedNavHeader
         leftIcon={profileUrl}
-        title={'REVEEL'}
+        title={'TRUPAID'}
         onPressLeft={onPressLeft}
       />
 

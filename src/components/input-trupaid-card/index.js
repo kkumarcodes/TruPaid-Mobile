@@ -3,7 +3,7 @@ import {View, StyleSheet, TextInput, Image, Text} from 'react-native';
 import {Theme} from '../../styles/theme';
 import {CommonStyle} from '../../styles';
 
-const InputReveelCard = (props) => {
+const InputTruPaidCard = (props) => {
   const [focus, setFocus] = React.useState(false);
 
   return (
@@ -94,4 +94,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default InputReveelCard;
+export default InputTruPaidCard;

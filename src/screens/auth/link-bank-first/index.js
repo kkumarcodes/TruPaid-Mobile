@@ -45,7 +45,7 @@ const LinkBankFirstScreen = () => {
         </Text>
 
         <Text style={styles.desc}>
-          {'To save, share and earn through\nReveel, first link any debit and credit\ncards you use'}
+          {'To save, share and earn through\nTruPaid, first link any debit and credit\ncards you use'}
         </Text>
 
       </View>

@@ -19,7 +19,7 @@ const cardArray = [
     id: 1,
     type: 'plaid',
     title: 'Use Plaid',
-    desc: 'Use Plaid to link bank account directly to Reveel',
+    desc: 'Use Plaid to link bank account directly to TruPaid',
     image: Theme.icon_plaid,
   },
   {

@@ -1,7 +1,7 @@
 /** https://github.com/jshanson7/react-native-swipeable/blob/master/src/index.js **/
 
 import React, {PureComponent} from 'react';
-import {Animated, Easing, PanResponder, StyleSheet, View, ViewPropTypes} from 'react-native';
+import {Animated, Easing, PanResponder, StyleSheet, View} from 'react-native';
 import PropTypes from 'prop-types';
 
 function noop() {}
@@ -76,12 +76,12 @@ export default class CustomSwipe extends PureComponent {
     swipeStartMinDistance: PropTypes.number,
 
     // styles
-    style: ViewPropTypes.style,
-    leftContainerStyle: ViewPropTypes.style,
-    leftButtonContainerStyle: ViewPropTypes.style,
-    rightContainerStyle: ViewPropTypes.style,
-    rightButtonContainerStyle: ViewPropTypes.style,
-    contentContainerStyle: ViewPropTypes.style
+    style: PropTypes.any,
+    leftContainerStyle: PropTypes.any,
+    leftButtonContainerStyle: PropTypes.any,
+    rightContainerStyle: PropTypes.any,
+    rightButtonContainerStyle: PropTypes.any,
+    contentContainerStyle: PropTypes.any
   };
 
   static defaultProps = {

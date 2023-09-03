@@ -25,7 +25,7 @@ const AptoSplashScreen = () => {
       >
         <View style={styles.titleContainer}>
           <Text style={[CommonStyle.text27_inter_b, {color: Theme.black, paddingVertical: 10, letterSpacing: -0.3}]}>
-            {'Welcome\nReveel card'}
+            {'Welcome\nTruPaid card'}
           </Text>
 
           <Text style={[CommonStyle.text18_inter_r, {color: Theme.greyDark, lineHeight: 22, letterSpacing: -0.3}]}>
@@ -42,7 +42,7 @@ const AptoSplashScreen = () => {
             <View style={styles.btnContainer}>
               <MainButton
                 onPress={onPressLaunch}
-                title={'I want a Reveel card'}
+                title={'I want a TruPaid card'}
                 isValid={true}
               />
             </View>

@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import {View, StyleSheet, StatusBar} from 'react-native';
 import {Theme} from '../../styles/theme';
 import AptoSplashScreen from '../apto/apto-splash';
-import ReveelCardDashboardScreen from './trupaid-card-dashboard';
+import TruPaidCardDashboardScreen from './trupaid-card-dashboard';
 import {useSelector} from 'react-redux';
 
-const ReveelCardScreen = () => {
+const TruPaidCardScreen = () => {
   const issueCard = useSelector(state => state?.apto?.issueCard);
   if (issueCard) {
     console.log(JSON.stringify(issueCard))
@@ -26,4 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ReveelCardScreen;
+export default TruPaidCardScreen;

@@ -17,7 +17,7 @@ import {setApiLoading} from '../../../redux/actions/config';
 import ApiGraphqlKit, {setGraphqlToken} from '../../../utils/ApiGraphqlKit';
 import InputCardBox from '../../../components/input-card-box';
 import InputTextCard from '../../../components/input-text-card';
-import {setApiReveelToken} from '../../../utils/ApiReveelKit';
+import {setApiTruPaidToken} from '../../../utils/ApiTruPaidKit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {updateUserInfo} from '../../../redux/actions/auth';
 import analytics from '@react-native-firebase/analytics';
@@ -127,7 +127,7 @@ const SignUpScreen = (props) => {
       });
 
       await setGraphqlToken(res?.data?.session_token);
-      await setApiReveelToken(res?.data?.session_token);
+      await setApiTruPaidToken(res?.data?.session_token);
       console.log('trupaid registration success: session token: ', res?.data?.session_token);
       await AsyncStorage.setItem('@trupaid_email', email);
       await AsyncStorage.setItem('@trupaid_password', password);
@@ -161,8 +161,8 @@ const SignUpScreen = (props) => {
   const HeaderLayout = () => {
     return (
       <View style={styles.headerContainer}>
-        <Text style={styles.textReveel}>
-          REVEEL
+        <Text style={styles.textTruPaid}>
+          TRUPAID
         </Text>
       </View>
     );
@@ -172,7 +172,7 @@ const SignUpScreen = (props) => {
     return (
       <View style={{flex: 1}}>
         <Text style={[CommonStyle.text24_inter_m, {textAlign: 'center'}]}>
-          Welcome to Reveel
+          Welcome to TruPaid
         </Text>
         <View style={{marginTop: WINDOW_HEIGHT * 0.07}}>
           <InputCardBox
@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: PADDING_HOR,
     backgroundColor: Theme.background,
   },
-  textReveel: {
+  textTruPaid: {
     fontSize: 18,
     fontFamily: 'TestPitchSans-Bold',
     color: '#222222',

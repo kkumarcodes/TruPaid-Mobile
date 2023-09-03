@@ -17,7 +17,7 @@ const AptoSuccessScreen = () => {
   const issueCard = useSelector(state => state?.apto?.issueCard);
 
   const onPressOk = () => {
-    navigation.navigate('ReveelCardManagement');
+    navigation.navigate('TruPaidCardManagement');
   };
 
   const CardNumber = lastNumber => {
@@ -69,7 +69,7 @@ const AptoSuccessScreen = () => {
             end={{x: 1.0, y: 1.0}}
             locations={[0, 1]}
             colors={['#f6e6e4', '#e6d4d3']}
-            style={styles.cardReveel}>
+            style={styles.cardTruPaid}>
             <View style={styles.cardInner}>
               <View style={[CommonStyle.row_bw]}>
                 <View>
@@ -143,7 +143,7 @@ const AptoSuccessScreen = () => {
                 CommonStyle.text15_inter_r,
                 {color: Theme.greyDark, paddingTop: 8},
               ]}>
-              Your Reveel Card has been issued!
+              Your TruPaid Card has been issued!
             </Text>
           </View>
 
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     width: WINDOW_WIDTH - PADDING_HOR * 2,
     height: (WINDOW_WIDTH - PADDING_HOR * 2) * 0.519,
   },
-  cardReveel: {
+  cardTruPaid: {
     width: WINDOW_WIDTH - PADDING_HOR * 2,
     height: (WINDOW_WIDTH - PADDING_HOR * 2) * 0.519,
     borderRadius: 12,

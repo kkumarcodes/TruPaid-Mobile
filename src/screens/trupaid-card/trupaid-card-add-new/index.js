@@ -14,7 +14,7 @@ import {navigation} from '../../../routes/navigation';
 import TopNavHeader from '../../../components/top-nav-header';
 import MainButton from '../../../components/main-button';
 import {creditText, validDateText} from '../../../styles/global';
-import InputReveelCard from '../../../components/input-trupaid-card';
+import InputTruPaidCard from '../../../components/input-trupaid-card';
 import {useDispatch, useSelector} from 'react-redux';
 import {setPaymentSource} from '../../../redux/actions/apto';
 import {
@@ -23,7 +23,7 @@ import {
 
 var valid = require('card-validator');
 
-const ReveelCardAddNewScreen = () => {
+const TruPaidCardAddNewScreen = () => {
   const dispatch = useDispatch();
   const [cardNumber, setCardNumber] = useState('5200828282828210');
   const [expiryDate, setExpiryDate] = useState('');
@@ -84,7 +84,7 @@ const ReveelCardAddNewScreen = () => {
       
       if (resBalance.data.payment_source?.id) {
         dispatch(setPaymentSource(res.data.payment_source));
-        navigation.navigate('ReveelCardAddMoney');
+        navigation.navigate('TruPaidCardAddMoney');
       } else {
         Toast.show({
           type: 'toast_custom_type',
@@ -126,7 +126,7 @@ const ReveelCardAddNewScreen = () => {
         <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
 
           <View style={{marginTop: 20}}>
-            <InputReveelCard
+            <InputTruPaidCard
               header={'Card number'}
               leftIcon={Theme.icon_trupaid_card2}
               rightIcon={Theme.card_trademark}
@@ -141,7 +141,7 @@ const ReveelCardAddNewScreen = () => {
 
           <View style={{flexDirection: 'row', marginTop: 10}}>
             <View style={{flex: 1, marginRight: 9}}>
-              <InputReveelCard
+              <InputTruPaidCard
                 header={'Expiry/validity date'}
                 placeholder={'MM/DD'}
                 value={expiryDate}
@@ -153,7 +153,7 @@ const ReveelCardAddNewScreen = () => {
             </View>
 
             <View style={{flex: 1}}>
-              <InputReveelCard
+              <InputTruPaidCard
                 header={'CVV'}
                 placeholder={'000'}
                 value={cvv2}
@@ -170,7 +170,7 @@ const ReveelCardAddNewScreen = () => {
           </View>
 
           <View style={{marginTop: 10}}>
-            <InputReveelCard
+            <InputTruPaidCard
               header={'Zip code'}
               value={zipCode}
               placeholder={'Code here'}
@@ -214,4 +214,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ReveelCardAddNewScreen;
+export default TruPaidCardAddNewScreen;

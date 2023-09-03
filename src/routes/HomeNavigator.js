@@ -23,10 +23,10 @@ import AptoPersonalBirthdayScreen from '../screens/apto/apto-personal-birthday';
 import AptoPersonalNumberScreen from '../screens/apto/apto-personal-number';
 import AptoLegalAgreementScreen from '../screens/apto/apto-legal_agreement';
 import AptoSuccessScreen from '../screens/apto/apto-success';
-import ReveelCardManagementScreen from '../screens/trupaid-card/trupaid-card-management';
-import ReveelCardAddMoneyScreen from '../screens/trupaid-card/trupaid-card-add-money';
-import ReveelCardAddNewScreen from '../screens/trupaid-card/trupaid-card-add-new';
-import ReveelCardSuccessScreen from '../screens/trupaid-card/trupaid-card-success';
+import TruPaidCardManagementScreen from '../screens/trupaid-card/trupaid-card-management';
+import TruPaidCardAddMoneyScreen from '../screens/trupaid-card/trupaid-card-add-money';
+import TruPaidCardAddNewScreen from '../screens/trupaid-card/trupaid-card-add-new';
+import TruPaidCardSuccessScreen from '../screens/trupaid-card/trupaid-card-success';
 
 const Stack = createStackNavigator();
 const HomeNavigator = () => {
@@ -130,20 +130,20 @@ const HomeNavigator = () => {
           component={AptoSuccessScreen}
         />
         <Stack.Screen
-          name="ReveelCardManagement"
-          component={ReveelCardManagementScreen}
+          name="TruPaidCardManagement"
+          component={TruPaidCardManagementScreen}
         />
         <Stack.Screen
-          name="ReveelCardAddMoney"
-          component={ReveelCardAddMoneyScreen}
+          name="TruPaidCardAddMoney"
+          component={TruPaidCardAddMoneyScreen}
         />
         <Stack.Screen
-          name="ReveelCardAddNew"
-          component={ReveelCardAddNewScreen}
+          name="TruPaidCardAddNew"
+          component={TruPaidCardAddNewScreen}
         />
         <Stack.Screen
-          name="ReveelCardSuccess"
-          component={ReveelCardSuccessScreen}
+          name="TruPaidCardSuccess"
+          component={TruPaidCardSuccessScreen}
         />
       </Stack.Navigator>
     </React.Fragment>

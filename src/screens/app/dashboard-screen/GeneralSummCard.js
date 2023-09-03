@@ -68,7 +68,7 @@ const GeneralSummCard = () => {
           </View>
 
           <Text style={[CommonStyle.text12_inter_r, {color: Theme.greyDarkMedium}]}>
-            Earned cash Reveel
+            Earned cash TruPaid
           </Text>
         </View>
 

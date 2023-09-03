@@ -83,7 +83,7 @@ const LinkBankSecondScreen = () => {
         </View>
 
         <Text style={styles.desc}>
-          {'Reveel uses Plaid to link your bank\n account. By linking your bank, Plaid will\n have access to your login detail and data\n collected from your accounts and will share\n your data with Reveel app'}
+          {'TruPaid uses Plaid to link your bank\n account. By linking your bank, Plaid will\n have access to your login detail and data\n collected from your accounts and will share\n your data with TruPaid app'}
         </Text>
 
       </View>

@@ -34,23 +34,26 @@ const Stack = createStackNavigator();
 
 const Route = () => {
   const dispatch = useDispatch();
-  const state = useSelector(state => state);
+  const landingPage = useSelector(state => state.auth.landingPage);
+  const signUpPage = useSelector(state => state.auth.signUpPage);
+  const homePage = useSelector(state => state.auth.homePage);
   const routeNameRef = React.useRef();
 
   useEffect(() => {
+    console.log('route ====', landingPage, signUpPage, homePage)
     setIsNavigationReady(true);
   }, []);
 
-  const chooseScreen = (state) => {
+  const chooseScreen = () => {
     
-    if (state.auth.landingPage) {
+    if (landingPage) {
       return (
         <>
           <StatusBar barStyle="dark-content" translucent backgroundColor="transparent" />
           <SplashScreen />
         </>
       );
-    } else if (state.auth.signUpPage) {
+    } else if (signUpPage) {
       return (
         <>
           <StatusBar barStyle="dark-content" translucent backgroundColor={Theme.primary} />
@@ -132,7 +135,7 @@ const Route = () => {
           </Stack.Navigator>
         </>
       );
-    } else if (state.auth.homePage) {
+    } else if (homePage) {
       return (
         <>
           <StatusBar barStyle="dark-content" translucent backgroundColor={Theme.primary} />
@@ -146,6 +149,13 @@ const Route = () => {
           </Stack.Navigator>
         </>
       );
+    } else {
+      return (
+        <>
+          <StatusBar barStyle="dark-content" translucent backgroundColor="transparent" />
+          <SplashScreen />
+        </>
+      );
     }
   };
 
@@ -153,9 +163,11 @@ const Route = () => {
     <React.Fragment>
       <NavigationContainer ref={_navigationRef}
         onReady={() => {
+          console.log(navigation.getNavigate().current.getCurrentRoute()?.name, '==navigation.getNavigate().current.getCurrentRoute()?.name==')
           routeNameRef.current = navigation.getNavigate().current.getCurrentRoute()?.name;
         }}
-        onStateChange={async () => {
+        onStateChange={async (state) => {
+          console.log(state, '===state===')
           const previousRouteName = routeNameRef.current;
           const currentRouteName = navigation.getNavigate().current.getCurrentRoute()?.name;
 
@@ -165,7 +177,7 @@ const Route = () => {
           routeNameRef.current = currentRouteName;
         }}
       >
-        {chooseScreen(state)}
+        {chooseScreen()}
         <ApiLoading />
 
       </NavigationContainer>

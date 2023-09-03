@@ -182,7 +182,7 @@ const DashboardScreen = () => {
       const currentRoute = navigation.getRouteName();
       if (currentRoute?.name === 'Feed') {
         Alert.alert(
-          'Reveel',
+          'TruPaid',
           'Are you sure to exit app?',
           [
             {

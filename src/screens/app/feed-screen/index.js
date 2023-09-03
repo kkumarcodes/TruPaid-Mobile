@@ -152,7 +152,7 @@ const FeedScreen = () => {
       const currentRoute = navigation.getRouteName();
       if (currentRoute?.name === 'Feed') {
         Alert.alert(
-          'Reveel',
+          'TruPaid',
           'Are you sure to exit app?',
           [
             {
@@ -244,7 +244,7 @@ const FeedScreen = () => {
       <StatusBar hidden={false} translucent={true} backgroundColor={'transparent'}/>
       <FeedNavHeader
         leftIcon={profileUrl}
-        title={'REVEEL'}
+        title={'TRUPAID'}
         rightIcon={Theme.icon_add}
         onPressLeft={onPressLeft}
         onPressRight={onPressRight}

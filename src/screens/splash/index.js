@@ -1,22 +1,22 @@
-import React, {useEffect} from 'react';
-import {View, StyleSheet, StatusBar, Text, BackHandler} from 'react-native';
-import {useDispatch} from 'react-redux';
-import {loadHome, loadSignUp, updateUserInfo} from '../../redux/actions/auth';
-import {Theme} from '../../styles/theme';
-import {setApiLoading} from '../../redux/actions/config';
+import React, { useEffect } from 'react';
+import { View, StyleSheet, StatusBar, Text, BackHandler } from 'react-native';
+import { useDispatch } from 'react-redux';
+import { loadHome, loadSignUp, updateUserInfo } from '../../redux/actions/auth';
+import { Theme } from '../../styles/theme';
+import { setApiLoading } from '../../redux/actions/config';
 import ApiFlowKit from '../../utils/ApiFlowKit';
 import ApiAuthKit from '../../utils/ApiAuthKit';
-import {setGraphqlToken} from '../../utils/ApiGraphqlKit';
-import {setApiReveelToken} from '../../utils/ApiReveelKit';
+import { setGraphqlToken } from '../../utils/ApiGraphqlKit';
+import { setApiTruPaidToken } from '../../utils/ApiTruPaidKit';
 import Toast from 'react-native-toast-message';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {navigation} from '../../routes/navigation';
+import { navigation } from '../../routes/navigation';
 
 const SplashScreen = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-
+    console.log('splash screen')
     signIn();
   }, []);
 
@@ -87,7 +87,7 @@ const SplashScreen = () => {
       console.log('trupaid login success: session token: ', res?.data?.session_token);
 
       await setGraphqlToken(res?.data?.session_token);
-      await setApiReveelToken(res?.data?.session_token);
+      await setApiTruPaidToken(res?.data?.session_token);
       dispatch(updateUserInfo(res?.data));
       gotoHome();
 
@@ -115,11 +115,11 @@ const SplashScreen = () => {
 
   return (
     <View style={styles.container}>
-      <StatusBar hidden={true} translucent={true} backgroundColor={'transparent'}/>
+      <StatusBar hidden={true} translucent={true} backgroundColor={'transparent'} />
 
       <View style={styles.body}>
         <Text style={styles.textLogo}>
-          REVEEL
+          TruPaid
         </Text>
       </View>
 

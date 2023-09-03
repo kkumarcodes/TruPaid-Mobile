@@ -15,9 +15,9 @@
     "@react-native-async-storage/async-storage": "^1.19.3",
     "@react-native-camera-roll/camera-roll": "^5.7.2",
     "@react-native-community/datetimepicker": "^7.5.0",
-    "@react-native-community/masked-view": "^0.1.11",
     "@react-native-firebase/analytics": "^18.3.1",
     "@react-native-firebase/app": "^18.3.1",
+    "@react-native-masked-view/masked-view": "^0.2.9",
     "@react-navigation/bottom-tabs": "^6.5.8",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/stack": "^6.3.17",
@@ -25,8 +25,10 @@
     "card-validator": "^8.1.1",
     "graphql": "^16.8.0",
     "graphql-request": "^6.1.0",
+    "install": "^0.13.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
+    "npm": "^10.0.0",
     "react": "18.2.0",
     "react-native": "0.72.4",
     "react-native-camera": "^4.2.1",
@@ -56,7 +58,8 @@
     "react-native-toast-message": "^2.1.6",
     "react-redux": "^8.1.2",
     "redux": "^4.2.1",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

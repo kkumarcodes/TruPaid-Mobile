@@ -27,7 +27,7 @@ import {
   setCountryCode,
   setBirthDate,
   setNameAndEmail,
-  setReveelAptoId,
+  setTruPaidAptoId,
 } from '../../../redux/actions/apto';
 import {APTO_MOBILE_ACCESS} from '../../../utils/Query';
 import {setApiAptoPublicKey} from '../../../utils/ApiAptoKit';
@@ -71,7 +71,7 @@ const AptoInputPhoneScreen = () => {
           setBirthDate(mobileAccessData.aptoMobileAccess.aptoUser?.birthday),
         );
         dispatch(
-          setReveelAptoId(
+          setTruPaidAptoId(
             mobileAccessData.aptoMobileAccess.aptoUser?.trupaidAptoId,
           ),
         );
