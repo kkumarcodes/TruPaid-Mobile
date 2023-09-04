@@ -14,12 +14,11 @@ import ApiFlowKit from '../../../utils/ApiFlowKit';
 import ApiAuthKit from '../../../utils/ApiAuthKit';
 import Toast from 'react-native-toast-message';
 import { setGraphqlToken } from '../../../utils/ApiGraphqlKit';
-import { loadHome, updateUserInfo } from '../../../redux/actions/auth';
+import { updateUserInfo } from '../../../redux/actions/auth';
 import InputCardBox from '../../../components/input-card-box';
 import InputTextCard from '../../../components/input-text-card';
 import { setApiTruPaidToken } from '../../../utils/ApiTruPaidKit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import analytics from '@react-native-firebase/analytics';
 
 const LoginScreen = (props) => {
   const dispatch = useDispatch();
@@ -38,7 +37,7 @@ const LoginScreen = (props) => {
     setValid(
       validateEmail(email) &&
       password?.trim()?.length > 1,
-      // validatePassword(password)
+      validatePassword(password)
     );
   }, [email, password]);
 

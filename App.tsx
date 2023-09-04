@@ -6,24 +6,11 @@
  */
 
 import React from 'react';
-import type { PropsWithChildren } from 'react';
 import {
-  SafeAreaView,
   Image,
-  StatusBar,
-  StyleSheet,
   Text,
-  useColorScheme,
   View,
 } from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 
 import Route from './src/routes';
 import { Provider } from 'react-redux';
@@ -33,11 +20,6 @@ import { Theme } from './src/styles/theme';
 import { CommonStyle } from './src/styles';
 import { ApolloProvider } from '@apollo/client';
 import apolloClient from './src/utils/apolloClient';
-
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
 
 const toastConfig = {
   toast_custom_type: ({ text1, text2, props, ...rest }) => (
@@ -75,12 +57,6 @@ const toastConfig = {
 };
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
     <Provider store={store}>
       <ApolloProvider client={apolloClient}>
@@ -90,24 +66,5 @@ function App(): JSX.Element {
     </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;

@@ -10,7 +10,6 @@ import { setGraphqlToken } from '../../utils/ApiGraphqlKit';
 import { setApiTruPaidToken } from '../../utils/ApiTruPaidKit';
 import Toast from 'react-native-toast-message';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { navigation } from '../../routes/navigation';
 
 const SplashScreen = () => {
   const dispatch = useDispatch();
