@@ -166,48 +166,6 @@ const FeedCard = (props) => {
           </View>
           : <View style={{width: 60}}/>
         }
-
-        {/*<View style={[CommonStyle.row, {flex: 1}]}>*/}
-        {/*  {item?.comments ?*/}
-        {/*    <View style={CommonStyle.row}>*/}
-        {/*      <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart, marginRight: 8}]}>*/}
-        {/*        <Image source={Theme.icon_message} style={styles.card}/>*/}
-        {/*      </View>*/}
-
-        {/*      <View>*/}
-        {/*        {item?.transaction_photo ?*/}
-        {/*          <View style={[styles.cardWrapper, {width: 20, height: 20}]}>*/}
-        {/*            <Image source={{uri: item?.transaction_photo ? item?.transaction_photo : 'http'}}*/}
-        {/*                   style={{width: 20, height: 20, resizeMode: 'cover'}}/>*/}
-        {/*          </View>*/}
-        {/*          : null*/}
-        {/*        }*/}
-        {/*      </View>*/}
-        {/*    </View>*/}
-        {/*    : <View>*/}
-        {/*      {item?.transaction_photo ?*/}
-        {/*        <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart}]}>*/}
-        {/*          <Image source={{uri: item?.transaction_photo ? item?.transaction_photo : 'http'}}*/}
-        {/*                 style={{width: 34, height: 34, resizeMode: 'cover'}}/>*/}
-        {/*        </View>*/}
-        {/*        : null*/}
-        {/*      }*/}
-        {/*    </View>*/}
-        {/*  }*/}
-        {/*</View>*/}
-
-        {/*{(!item?.discount || item?.discount < 1) ?*/}
-        {/*  <View style={{width: 60}}/>*/}
-        {/*  :*/}
-        {/*  <View style={[styles.discountWrapper, {width: 60}]}>*/}
-        {/*    <Image source={Theme.icon_cashback} style={styles.card}/>*/}
-        {/*    <View style={{paddingLeft: 0}}>*/}
-        {/*      <Text style={[CommonStyle.text12_inter_m, {color: '#F44336', letterSpacing: 1}]}>*/}
-        {/*        {numberWithCommas(item?.discount)}%*/}
-        {/*      </Text>*/}
-        {/*    </View>*/}
-        {/*  </View>*/}
-        {/*}*/}
       </View>
     </View>
   );
