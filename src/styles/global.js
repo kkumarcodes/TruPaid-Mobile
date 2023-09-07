@@ -47,23 +47,6 @@ export const validatePassword = (password) => {
   return !!password.match(regularExpression);
 };
 
-// export const creditText = (str) => {
-//   if (str.slice(-1) === ' ') {
-//     return str.slice(0, -1)
-//   }
-//   const longStr = str.split(' ').join('')
-//   const strLen = longStr.length
-//   const str1 = longStr.slice(0, 4)
-//   const str2 = longStr.slice(4, 8)
-//   const str3 = longStr.slice(8, 12)
-//   const str4 = longStr.slice(12, 16)
-//
-//   if (strLen < 4) return str1
-//   else if (strLen < 8) return str1 + ' ' + str2
-//   else if (strLen < 12) return str1 + ' ' + str2 + ' ' + str3
-//   else return str1 + ' ' + str2 + ' ' + str3 + ' ' + str4
-// }
-
 export const creditText = (str) => {
   if (str.slice(-1) === ' ') {
     return str.slice(0, -1);
