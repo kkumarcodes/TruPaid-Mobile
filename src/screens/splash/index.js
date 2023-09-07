@@ -27,7 +27,6 @@ const SplashScreen = () => {
       if (!email || !password) {
         gotoLogin();
       } else {
-        // dispatch(setApiLoading(true));
         getFlowIdForLogin().then(async res => {
           const actionId = res?.data?.id;
           if (actionId) {
@@ -78,7 +77,6 @@ const SplashScreen = () => {
       'password_identifier': email,
     };
 
-    // dispatch(setApiLoading(true));
     const params = 'login?flow=' + actionId;
     ApiAuthKit.post(params, body).then(async res => {
       dispatch(setApiLoading(false));
