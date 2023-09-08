@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {
   View,
   StyleSheet,
   TouchableOpacity, Text, Image,
 } from 'react-native';
-import {CommonStyle} from '../../styles';
-import {Theme} from '../../styles/theme';
-import {PADDING_HOR} from '../../styles/constant';
+import { CommonStyle } from '../../styles';
+import { Theme } from '../../styles/theme';
+import { PADDING_HOR } from '../../styles/constant';
 
 const BasicNavHeader = (props) => {
   return (
@@ -15,25 +15,25 @@ const BasicNavHeader = (props) => {
       <View style={[CommonStyle.row]}>
         <TouchableOpacity onPress={props?.onPressLeft} style={styles.btnWrapper}>
           <Image source={props?.leftIcon}
-                 style={{width: 18, height: 15, resizeMode: 'contain', tintColor: Theme.black}}
+            style={{ width: 18, height: 15, resizeMode: 'contain', tintColor: Theme.black }}
           />
         </TouchableOpacity>
 
         {props?.title ?
-        <View style={{paddingHorizontal: 25}}>
-          <Text style={CommonStyle.text16_inter_m} numberOfLines={1}>
-            {props?.title}
-          </Text>
-        </View>
+          <View style={{ paddingHorizontal: 25 }}>
+            <Text style={CommonStyle.text16_inter_m} numberOfLines={1}>
+              {props?.title}
+            </Text>
+          </View>
           : null
         }
 
-        <View style={{flex: 1, alignItems: 'flex-end'}}>
+        <View style={{ flex: 1, alignItems: 'flex-end' }}>
           {props.rightIcon ?
             <TouchableOpacity onPress={props?.onPressRight} style={styles.btnWrapper}>
-              <Image source={props?.rightIcon} style={styles.rightStyle}/>
+              <Image source={props?.rightIcon} style={styles.rightStyle} />
             </TouchableOpacity>
-            : <View/>
+            : <View />
           }
         </View>
       </View>

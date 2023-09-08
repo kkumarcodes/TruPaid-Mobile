@@ -1,13 +1,13 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   View,
   Text,
   StyleSheet,
   TouchableOpacity, ScrollView,
 } from 'react-native';
-import {Theme} from '../../styles/theme';
-import {CommonStyle} from '../../styles';
-import {PADDING_HOR, WINDOW_WIDTH} from '../../styles/constant';
+import { Theme } from '../../styles/theme';
+import { CommonStyle } from '../../styles';
+import { PADDING_HOR, WINDOW_WIDTH } from '../../styles/constant';
 
 const CategoriesView = (props) => {
   const [categories, setCategories] = useState(props?.data);
@@ -43,7 +43,7 @@ const CategoriesView = (props) => {
         borderColor: 'rgba(196, 196, 196, 0.18)',
         borderWidth: item?.checked ? 1 : 1,
       }]}
-                        onPress={() => onPressCategoryItem(item)}
+        onPress={() => onPressCategoryItem(item)}
       >
         <Text style={[CommonStyle.text12_inter_m, {
           color: item?.checked ? Theme.white : Theme.black,
@@ -55,8 +55,8 @@ const CategoriesView = (props) => {
   };
 
   return (
-    <View style={{paddingVertical: 20, backgroundColor: 'transparent'}}>
-      <View style={{paddingHorizontal: PADDING_HOR}}>
+    <View style={{ paddingVertical: 20, backgroundColor: 'transparent' }}>
+      <View style={{ paddingHorizontal: PADDING_HOR }}>
         <Text style={CommonStyle.text16_inter_m}>
           Categories
         </Text>
@@ -66,12 +66,12 @@ const CategoriesView = (props) => {
         {categories.map((item, key) => {
           return (
             <View key={key}
-                  style={{
-                    paddingTop: 20,
-                    paddingBottom: 10,
-                    paddingLeft: key === 0 ? PADDING_HOR : 10,
-                    paddingRight: key === categories.length - 1 ? PADDING_HOR : 0,
-                  }}>
+              style={{
+                paddingTop: 20,
+                paddingBottom: 10,
+                paddingLeft: key === 0 ? PADDING_HOR : 10,
+                paddingRight: key === categories.length - 1 ? PADDING_HOR : 0,
+              }}>
               {CategoryButton(item)}
             </View>
           );

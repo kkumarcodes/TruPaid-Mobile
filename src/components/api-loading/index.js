@@ -1,8 +1,8 @@
-import React, {} from 'react';
-import {View, StyleSheet, ActivityIndicator} from 'react-native';
-import {connect} from 'react-redux';
-import {Theme} from '../../styles/theme';
-import {WINDOW_HEIGHT} from '../../styles/constant';
+import React, { } from 'react';
+import { View, StyleSheet, ActivityIndicator } from 'react-native';
+import { connect } from 'react-redux';
+import { Theme } from '../../styles/theme';
+import { WINDOW_HEIGHT } from '../../styles/constant';
 
 const ApiLoading = (props) => {
   const {
@@ -12,7 +12,7 @@ const ApiLoading = (props) => {
   if (apiLoading) {
     return (
       <View style={styles.container}>
-        <ActivityIndicator size="large" color={Theme.white}/>
+        <ActivityIndicator size="large" color={Theme.white} />
       </View>
     );
   } else {
