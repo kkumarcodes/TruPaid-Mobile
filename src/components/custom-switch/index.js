@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   View,
   Text,
   StyleSheet,
 } from 'react-native';
-import {Switch} from 'react-native-switch';
-import {CommonStyle} from '../../styles';
-import {Theme} from '../../styles/theme';
+import { Switch } from 'react-native-switch';
+import { CommonStyle } from '../../styles';
+import { Theme } from '../../styles/theme';
 
 const CustomSwitch = (props) => {
 
@@ -42,7 +42,7 @@ const CustomSwitch = (props) => {
         />
       </View>
 
-      <View style={styles.line}/>
+      <View style={styles.line} />
 
     </View>
   );

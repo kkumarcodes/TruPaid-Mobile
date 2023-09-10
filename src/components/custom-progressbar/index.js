@@ -1,6 +1,6 @@
-import React, {Component, useState, useEffect} from 'react';
-import {StyleSheet, View, Animated} from 'react-native';
-import {CommonStyle} from '../../styles';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, View, Animated } from 'react-native';
+import { CommonStyle } from '../../styles';
 
 // https://www.educba.com/react-native-progress-bar/
 const CustomProgressBar = (props) => {
@@ -13,7 +13,7 @@ const CustomProgressBar = (props) => {
   }, [props.value]);
 
   const onAnimation = () => {
-    animation.addListener(({value}) => {
+    animation.addListener(({ value }) => {
       setProgress(parseInt(value, 10));
     });
 
@@ -29,13 +29,13 @@ const CustomProgressBar = (props) => {
       <View style={progressStyles.containerStyle2}>
         <Animated.View
           style={[
-            progressStyles.innerStyle, {width: progressStatusValue + '%'}, {backgroundColor: props.color},
+            progressStyles.innerStyle, { width: progressStatusValue + '%' }, { backgroundColor: props.color },
           ]}
         />
       </View>
 
-      <Animated.Text style={[CommonStyle.text12_inter_r, {width: 40, textAlign: 'right'}]}>
-        {progressStatusValue }%
+      <Animated.Text style={[CommonStyle.text12_inter_r, { width: 40, textAlign: 'right' }]}>
+        {progressStatusValue}%
       </Animated.Text>
     </View>
   );
