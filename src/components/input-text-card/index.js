@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, StyleSheet, TextInput, Image, TouchableOpacity, Text} from 'react-native';
-import {Theme} from '../../styles/theme';
-import {CommonStyle} from '../../styles';
+import { View, StyleSheet, TextInput, Image, TouchableOpacity, Text } from 'react-native';
+import { Theme } from '../../styles/theme';
+import { CommonStyle } from '../../styles';
 
 const InputTextCard = (props) => {
   const [focus, setFocus] = React.useState(false);
@@ -9,7 +9,7 @@ const InputTextCard = (props) => {
   return (
     <>
       {props?.title ?
-        <Text style={[CommonStyle.text12_inter_m, {color: '#787878', paddingBottom: 8}]}>
+        <Text style={[CommonStyle.text12_inter_m, { color: '#787878', paddingBottom: 8 }]}>
           {props?.title}
         </Text>
         : null
@@ -21,7 +21,7 @@ const InputTextCard = (props) => {
       }]}>
         {props?.leftIcon ?
           <View style={styles.iconWrapper}>
-            <props.leftIcon/>
+            <props.leftIcon />
           </View>
           : null}
         <TextInput
@@ -37,20 +37,20 @@ const InputTextCard = (props) => {
 
         {props?.rightIcon ?
           <TouchableOpacity style={styles.rightIconWrapper}
-                            onPress={props?.onPressRight}
+            onPress={props?.onPressRight}
           >
             <Image source={props?.rightIcon} style={[styles.rightIcon, {
               // width: 28,
               height: 22,
-            }]}/>
+            }]} />
           </TouchableOpacity>
           : null
         }
       </View>
 
-      {props?.header && focus?
+      {props?.header && focus ?
         <View style={styles.header}>
-          <Text style={[CommonStyle.text12_inter_m, {color: Theme.primary}]}>
+          <Text style={[CommonStyle.text12_inter_m, { color: Theme.primary }]}>
             {props?.header}
           </Text>
         </View>

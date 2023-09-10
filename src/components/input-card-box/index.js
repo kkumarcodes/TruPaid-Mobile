@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, StyleSheet, TextInput, Image, TouchableOpacity, Text} from 'react-native';
-import {Theme} from '../../styles/theme';
-import {CommonStyle} from '../../styles';
+import { View, StyleSheet, TextInput, Image, TouchableOpacity, Text } from 'react-native';
+import { Theme } from '../../styles/theme';
+import { CommonStyle } from '../../styles';
 
 const InputCardBox = (props) => {
   const [focus, setFocus] = React.useState(false);
@@ -9,7 +9,7 @@ const InputCardBox = (props) => {
   return (
     <>
       {props?.title ?
-        <Text style={[CommonStyle.text12_inter_m, {color: '#787878', paddingBottom: 8}]}>
+        <Text style={[CommonStyle.text12_inter_m, { color: '#787878', paddingBottom: 8 }]}>
           {props?.title}
         </Text>
         : null
@@ -21,7 +21,7 @@ const InputCardBox = (props) => {
       }]}>
         {props?.leftIcon ?
           <View style={styles.iconWrapper}>
-            <props.leftIcon/>
+            <props.leftIcon />
           </View>
           : null}
         <TextInput
@@ -39,20 +39,20 @@ const InputCardBox = (props) => {
             <Image source={props?.rightIcon} style={[styles.rightIcon, {
               width: props?.rightIconWidth ? props?.rightIconWidth : 40,
               height: props?.rightIconHeight ? props?.rightIconHeight : 25,
-            }]}/>
+            }]} />
           </View>
           : null
         }
       </View>
       {props?.warning ?
-        <Text style={[CommonStyle.text12_inter_r, {color: '#F44336', lineHeight: 18, paddingTop: 3}]}>
+        <Text style={[CommonStyle.text12_inter_r, { color: '#F44336', lineHeight: 18, paddingTop: 3 }]}>
           {props?.warning}
         </Text>
         : null
       }
-      {props?.header && focus?
+      {props?.header && focus ?
         <View style={styles.header}>
-          <Text style={[CommonStyle.text12_inter_m, {color: Theme.primary}]}>
+          <Text style={[CommonStyle.text12_inter_m, { color: Theme.primary }]}>
             {props?.header}
           </Text>
         </View>

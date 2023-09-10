@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, StyleSheet, TextInput, Image, TouchableOpacity} from 'react-native';
-import {Theme} from '../../styles/theme';
+import { View, StyleSheet, TextInput, Image, TouchableOpacity } from 'react-native';
+import { Theme } from '../../styles/theme';
 
 const InputBox = (props) => {
   const [focus, setFocus] = React.useState(false);
@@ -13,7 +13,7 @@ const InputBox = (props) => {
     }]}>
       {props?.leftIcon ?
         <View style={styles.iconWrapper}>
-          <props.leftIcon/>
+          <props.leftIcon />
         </View>
         : null}
       <TextInput
@@ -28,12 +28,12 @@ const InputBox = (props) => {
       />
       {props?.rightIcon ?
         <TouchableOpacity style={styles.rightIconWrapper}
-                          onPress={props?.onPressRight}
+          onPress={props?.onPressRight}
         >
           <Image source={props?.rightIcon} style={[styles.rightIcon, {
             width: 25,
             height: 25,
-          }]}/>
+          }]} />
         </TouchableOpacity>
         : null
       }

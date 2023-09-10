@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
   TouchableOpacity, Text, Image,
 } from 'react-native';
-import {CommonStyle} from '../../styles';
-import {Theme} from '../../styles/theme';
-import {PADDING_HOR} from '../../styles/constant';
+import { CommonStyle } from '../../styles';
+import { Theme } from '../../styles/theme';
+import { PADDING_HOR } from '../../styles/constant';
 import { Platform } from 'react-native';
 
 const FeedNavHeader = (props) => {
@@ -14,25 +14,25 @@ const FeedNavHeader = (props) => {
     <View style={styles.container}>
 
       <View style={[CommonStyle.row_bw]}>
-        <View style={{flex: 1}}>
+        <View style={{ flex: 1 }}>
           <TouchableOpacity onPress={props?.onPressLeft} style={[styles.profileWrapper]}>
-            {props?.leftIcon ? <Image source={{uri: props?.leftIcon}} style={styles.profile}/> : null}
-            <View style={styles.notifyWrapper}/>
+            {props?.leftIcon ? <Image source={{ uri: props?.leftIcon }} style={styles.profile} /> : null}
+            <View style={styles.notifyWrapper} />
           </TouchableOpacity>
         </View>
 
-        <View style={{flex: 5, alignItems: 'center', paddingHorizontal: 10}}>
+        <View style={{ flex: 5, alignItems: 'center', paddingHorizontal: 10 }}>
           <Text style={styles.textTitle} numberOfLines={1}>
             {props?.title}
           </Text>
         </View>
 
-        <View style={{flex: 1, alignItems: 'flex-end'}}>
+        <View style={{ flex: 1, alignItems: 'flex-end' }}>
           {props.rightIcon ?
             <TouchableOpacity onPress={props?.onPressRight} style={styles.btnWrapper}>
-              <Image source={props?.rightIcon} style={styles.btnPlus}/>
+              <Image source={props?.rightIcon} style={styles.btnPlus} />
             </TouchableOpacity>
-            : <View style={{flex: 1}}/>
+            : <View style={{ flex: 1 }} />
           }
         </View>
 

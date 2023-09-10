@@ -1,16 +1,16 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import {
   View,
   StyleSheet,
   TouchableOpacity, Text, Image,
 } from 'react-native';
-import {CommonStyle} from '../../styles';
-import {Theme} from '../../styles/theme';
-import {PADDING_HOR} from '../../styles/constant';
+import { CommonStyle } from '../../styles';
+import { Theme } from '../../styles/theme';
+import { PADDING_HOR } from '../../styles/constant';
 import TimeAgo from '@andordavoti/react-native-timeago';
-import {numberWithCommas} from '../../styles/global';
-import {navigation} from '../../routes/navigation';
-import {useSelector} from 'react-redux';
+import { numberWithCommas } from '../../styles/global';
+import { navigation } from '../../routes/navigation';
+import { useSelector } from 'react-redux';
 import moment from 'moment';
 
 const FeedCard = (props) => {
@@ -37,7 +37,7 @@ const FeedCard = (props) => {
     if (myUserId === item?.user?.id) {
       navigation.navigate('Profile');
     } else {
-      navigation.navigate('UserProfile', {item});
+      navigation.navigate('UserProfile', { item });
     }
   };
 
@@ -57,24 +57,24 @@ const FeedCard = (props) => {
   };
 
   return (
-    <View style={[styles.container, {borderRadius: borderRadius ? borderRadius : 0}]}>
+    <View style={[styles.container, { borderRadius: borderRadius ? borderRadius : 0 }]}>
       <TouchableOpacity style={CommonStyle.row_bw} onPress={onPressItem}>
         <TouchableOpacity onPress={onPressItem}>
           <View style={CommonStyle.row}>
             <View style={styles.profileWrapper}>
               {item?.user?.profile?.image?.cloudinaryData?.secure_url ?
-                <Image source={{uri: item?.user?.profile?.image?.cloudinaryData?.secure_url}} style={styles.profile}/>
+                <Image source={{ uri: item?.user?.profile?.image?.cloudinaryData?.secure_url }} style={styles.profile} />
                 : null
               }
             </View>
-            <View style={{paddingLeft: 10}}>
+            <View style={{ paddingLeft: 10 }}>
               <Text style={[CommonStyle.text12_inter_m]}>
                 {item?.user?.firstName} {item?.user?.lastName}
               </Text>
               {initStart ?
-                <View style={{paddingTop: 0}}>
+                <View style={{ paddingTop: 0 }}>
                   <TimeAgo dateTo={moment(item?.updatedAt).toDate()} updateInterval={10000}
-                           style={[CommonStyle.text11_inter_r, {color: Theme.greyTimeAgo}]}/>
+                    style={[CommonStyle.text11_inter_r, { color: Theme.greyTimeAgo }]} />
                 </View>
                 : null
               }
@@ -83,8 +83,8 @@ const FeedCard = (props) => {
         </TouchableOpacity>
 
 
-        <View style={{marginTop: -20, paddingLeft: 10, flex: 1, alignItems: 'flex-end'}}>
-          <Text style={[CommonStyle.text12_inter_r, {color: Theme.greyDark}]} numberOfLines={1}>
+        <View style={{ marginTop: -20, paddingLeft: 10, flex: 1, alignItems: 'flex-end' }}>
+          <Text style={[CommonStyle.text12_inter_r, { color: Theme.greyDark }]} numberOfLines={1}>
             {'Shopped at '}
             <Text style={CommonStyle.text12_inter_sb}>
               {item?.receipt?.brand?.name}
@@ -93,26 +93,26 @@ const FeedCard = (props) => {
         </View>
       </TouchableOpacity>
 
-      <View style={[CommonStyle.row_bw, {paddingTop: 16}]}>
-        <View style={[CommonStyle.row, {flex: 1}]}>
-          <TouchableOpacity style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart}]}
-                            activeOpacity={myUserId === item?.user?.id ? 1 : 0.5}
-                            onPress={() => onPressBuyingClub()}
+      <View style={[CommonStyle.row_bw, { paddingTop: 16 }]}>
+        <View style={[CommonStyle.row, { flex: 1 }]}>
+          <TouchableOpacity style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart }]}
+            activeOpacity={myUserId === item?.user?.id ? 1 : 0.5}
+            onPress={() => onPressBuyingClub()}
           >
-            <Image source={Theme.icon_cart_yellow} style={styles.card}/>
+            <Image source={Theme.icon_cart_yellow} style={styles.card} />
           </TouchableOpacity>
-          <View style={{paddingLeft: 8}}>
+          <View style={{ paddingLeft: 8 }}>
             <Text style={CommonStyle.text12_inter_r}>
               {numberWithCommas(item?.pendingDemand)}
             </Text>
           </View>
         </View>
 
-        <View style={[CommonStyle.row, {flex: 1}]}>
-          <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart}]}>
-            <Image source={Theme.icon_card} style={styles.card}/>
+        <View style={[CommonStyle.row, { flex: 1 }]}>
+          <View style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart }]}>
+            <Image source={Theme.icon_card} style={styles.card} />
           </View>
-          <View style={{paddingLeft: 8}}>
+          <View style={{ paddingLeft: 8 }}>
             <Text style={CommonStyle.text12_inter_r}>
               {numberWithCommas(item?.influencedPurchases)}
             </Text>
@@ -120,19 +120,19 @@ const FeedCard = (props) => {
         </View>
 
         {item?.id ?
-          <View style={[CommonStyle.row, {flex: 1}]}>
+          <View style={[CommonStyle.row, { flex: 1 }]}>
             {item?.description ?
               <View style={CommonStyle.row}>
-                <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart, marginRight: 8}]}>
-                  <Image source={Theme.icon_message} style={styles.card}/>
+                <View style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart, marginRight: 8 }]}>
+                  <Image source={Theme.icon_message} style={styles.card} />
                 </View>
 
                 <View>
                   {secure_url ?
-                    <View style={[styles.cardWrapper, {width: 20, height: 20}]}>
+                    <View style={[styles.cardWrapper, { width: 20, height: 20 }]}>
                       <Image
-                        source={secure_url ? {uri: secure_url} : Theme.card_frame1}
-                        style={{width: 20, height: 20, resizeMode: 'cover'}}/>
+                        source={secure_url ? { uri: secure_url } : Theme.card_frame1}
+                        style={{ width: 20, height: 20, resizeMode: 'cover' }} />
                     </View>
                     : null
                   }
@@ -140,23 +140,23 @@ const FeedCard = (props) => {
               </View>
               : <View>
                 {secure_url ?
-                  <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart}]}>
+                  <View style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart }]}>
                     <Image
-                      source={secure_url ? {uri: secure_url} : Theme.card_frame1}
-                      style={{width: 34, height: 34, resizeMode: 'cover'}}/>
+                      source={secure_url ? { uri: secure_url } : Theme.card_frame1}
+                      style={{ width: 34, height: 34, resizeMode: 'cover' }} />
                   </View>
                   : null
                 }
               </View>
             }
           </View>
-          : <View style={[CommonStyle.row, {flex: 1}]}/>}
+          : <View style={[CommonStyle.row, { flex: 1 }]} />}
 
         {(Array.isArray(item?.receipt?.brand?.deals) && item?.receipt?.brand?.deals?.length > 0 && item?.receipt?.brand?.deals[0]?.rewardValue > 0) ?
-          <View style={[styles.discountWrapper, {width: 60}]}>
-            <Image source={Theme.icon_cashback} style={styles.card}/>
-            <View style={{paddingLeft: 0}}>
-              <Text style={[CommonStyle.text12_inter_m, {color: '#F44336'}]}>
+          <View style={[styles.discountWrapper, { width: 60 }]}>
+            <Image source={Theme.icon_cashback} style={styles.card} />
+            <View style={{ paddingLeft: 0 }}>
+              <Text style={[CommonStyle.text12_inter_m, { color: '#F44336' }]}>
                 {item?.receipt?.brand?.deals[0]?.rewardType === 'PERCENT' ?
                   `${numberWithCommas(item?.receipt?.brand?.deals[0]?.rewardValue)}%`
                   : `$${numberWithCommas(item?.receipt?.brand?.deals[0]?.rewardValue)}`
@@ -164,7 +164,7 @@ const FeedCard = (props) => {
               </Text>
             </View>
           </View>
-          : <View style={{width: 60}}/>
+          : <View style={{ width: 60 }} />
         }
       </View>
     </View>
