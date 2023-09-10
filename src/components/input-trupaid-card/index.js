@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, StyleSheet, TextInput, Image, Text} from 'react-native';
-import {Theme} from '../../styles/theme';
-import {CommonStyle} from '../../styles';
+import { View, StyleSheet, TextInput, Image, Text } from 'react-native';
+import { Theme } from '../../styles/theme';
+import { CommonStyle } from '../../styles';
 
 const InputTruPaidCard = (props) => {
   const [focus, setFocus] = React.useState(false);
@@ -15,14 +15,14 @@ const InputTruPaidCard = (props) => {
       }]}>
         {props?.leftIcon ?
           <View style={styles.leftIconWrapper}>
-            <Image source={props?.leftIcon} style={{width: 21, height: 15, resizeMode: 'contain', tintColor: '#C2C2C2'}}/>
+            <Image source={props?.leftIcon} style={{ width: 21, height: 15, resizeMode: 'contain', tintColor: '#C2C2C2' }} />
           </View>
           : null}
 
-        <View style={{flex: 1, justifyContent: 'center'}}>
+        <View style={{ flex: 1, justifyContent: 'center' }}>
           {props?.header ?
             <View style={styles.header}>
-              <Text style={[CommonStyle.text11_inter_r, {color: '#808080'}]}>
+              <Text style={[CommonStyle.text11_inter_r, { color: '#808080' }]}>
                 {props?.header}
               </Text>
             </View>
@@ -46,13 +46,13 @@ const InputTruPaidCard = (props) => {
             <Image source={props?.rightIcon} style={[styles.rightIcon, {
               width: props?.rightIconWidth ? props?.rightIconWidth : 40,
               height: props?.rightIconHeight ? props?.rightIconHeight : 25,
-            }]}/>
+            }]} />
           </View>
           : null
         }
       </View>
       {props?.warning ?
-        <Text style={[CommonStyle.text12_inter_r, {color: '#F44336', lineHeight: 18, paddingTop: 3}]}>
+        <Text style={[CommonStyle.text12_inter_r, { color: '#F44336', lineHeight: 18, paddingTop: 3 }]}>
           {props?.warning}
         </Text>
         : null
