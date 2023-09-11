@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -6,8 +6,8 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import {Theme} from '../../styles/theme';
-import {CommonStyle} from '../../styles';
+import { Theme } from '../../styles/theme';
+import { CommonStyle } from '../../styles';
 import FastImage from 'react-native-fast-image';
 
 const ProductCard = (props) => {
@@ -21,22 +21,22 @@ const ProductCard = (props) => {
       borderColor: props?.item?.checked ? Theme.primary : Theme.white, backgroundColor: 'rgba(0,0,0,1)',
     }]}>
       <TouchableOpacity onPress={() => onPressItem(props?.item)}
-                        activeOpacity={0.8}
+        activeOpacity={0.8}
       >
         {props?.item?.src ?
           <FastImage
-            source={{uri: props?.item?.src ? props?.item?.src + '' : 'http'}}
-            style={{width: props?.width, height: props?.height, resizeMode: 'stretch', opacity: 0.7}}
+            source={{ uri: props?.item?.src ? props?.item?.src + '' : 'http' }}
+            style={{ width: props?.width, height: props?.height, resizeMode: 'stretch', opacity: 0.7 }}
           />
-          : <View style={{width: props?.width, height: props?.height, backgroundColor: Theme.grey}}/>
+          : <View style={{ width: props?.width, height: props?.height, backgroundColor: Theme.grey }} />
         }
         {props?.item?.checked &&
-        <View style={styles.favoriteWrapper}>
-          <Image
-            source={Theme.icon_check_w}
-            style={[styles.check]}
-          />
-        </View>
+          <View style={styles.favoriteWrapper}>
+            <Image
+              source={Theme.icon_check_w}
+              style={[styles.check]}
+            />
+          </View>
         }
 
         <View style={styles.title}>

@@ -1,12 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {
   View,
   StyleSheet,
   TouchableOpacity, Text, Image,
 } from 'react-native';
-import {CommonStyle} from '../../styles';
-import {Theme} from '../../styles/theme';
-import {PADDING_HOR} from '../../styles/constant';
+import { CommonStyle } from '../../styles';
+import { PADDING_HOR } from '../../styles/constant';
 
 const ProfileNavHeader = (props) => {
   return (
@@ -14,20 +13,20 @@ const ProfileNavHeader = (props) => {
 
       <View style={[CommonStyle.row]}>
         {props?.title ?
-        <View style={{paddingHorizontal: 0}}>
-          <Text style={CommonStyle.text16_inter_m} numberOfLines={1}>
-            {props?.title}
-          </Text>
-        </View>
+          <View style={{ paddingHorizontal: 0 }}>
+            <Text style={CommonStyle.text16_inter_m} numberOfLines={1}>
+              {props?.title}
+            </Text>
+          </View>
           : null
         }
 
-        <View style={{flex: 1, alignItems: 'flex-end'}}>
+        <View style={{ flex: 1, alignItems: 'flex-end' }}>
           {props.rightIcon ?
             <TouchableOpacity onPress={props?.onPressRight} style={styles.btnWrapper}>
-              <Image source={props?.rightIcon} style={styles.rightStyle}/>
+              <Image source={props?.rightIcon} style={styles.rightStyle} />
             </TouchableOpacity>
-            : <View/>
+            : <View />
           }
         </View>
       </View>

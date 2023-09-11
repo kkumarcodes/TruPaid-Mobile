@@ -1,14 +1,14 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   View,
   StyleSheet,
   TouchableOpacity, Text, Image,
 } from 'react-native';
-import {CommonStyle} from '../../styles';
-import {Theme} from '../../styles/theme';
-import {PADDING_HOR} from '../../styles/constant';
+import { CommonStyle } from '../../styles';
+import { Theme } from '../../styles/theme';
+import { PADDING_HOR } from '../../styles/constant';
 import TimeAgo from '@andordavoti/react-native-timeago';
-import {numberWithCommas} from '../../styles/global';
+import { numberWithCommas } from '../../styles/global';
 import moment from 'moment';
 
 const ReceiptCard = (props) => {
@@ -38,30 +38,30 @@ const ReceiptCard = (props) => {
         <View style={CommonStyle.row}>
           <View>
             <View style={styles.profileWrapper}>
-              <Image source={{uri: item?.shop_logo ? item?.shop_logo : 'http'}} style={styles.profile}/>
+              <Image source={{ uri: item?.shop_logo ? item?.shop_logo : 'http' }} style={styles.profile} />
 
             </View>
             <View style={styles.shopCheck}>
-              <Image source={Theme.icon_check_w} style={styles.iconCheck}/>
+              <Image source={Theme.icon_check_w} style={styles.iconCheck} />
             </View>
           </View>
 
-          <View style={{paddingLeft: 10}}>
+          <View style={{ paddingLeft: 10 }}>
             <Text style={CommonStyle.text12_inter_m}>
               {item?.shop_name}
             </Text>
             {initStart ?
-              <View style={{paddingTop: 5}}>
+              <View style={{ paddingTop: 5 }}>
                 <TimeAgo dateTo={moment(item?.updatedAt).toDate()} updateInterval={10000}
-                         style={[CommonStyle.text11_inter_r, {color: Theme.grey}]}/>
+                  style={[CommonStyle.text11_inter_r, { color: Theme.grey }]} />
               </View>
               : null
             }
           </View>
         </View>
 
-        <View style={{marginTop: -20}}>
-          <Text style={[CommonStyle.text12_inter_m, {color: Theme.grey}]}>
+        <View style={{ marginTop: -20 }}>
+          <Text style={[CommonStyle.text12_inter_m, { color: Theme.grey }]}>
             {'Shopped at '}
             <Text style={CommonStyle.text12_inter_sb}>
               {item?.shop_name}
@@ -70,41 +70,41 @@ const ReceiptCard = (props) => {
         </View>
       </TouchableOpacity>
 
-      <View style={[CommonStyle.row_bw, {paddingTop: 16}]}>
-        <View style={[CommonStyle.row, {flex: 1}]}>
-          <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart}]}>
-            <Image source={Theme.icon_cart_yellow} style={styles.card}/>
+      <View style={[CommonStyle.row_bw, { paddingTop: 16 }]}>
+        <View style={[CommonStyle.row, { flex: 1 }]}>
+          <View style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart }]}>
+            <Image source={Theme.icon_cart_yellow} style={styles.card} />
           </View>
-          <View style={{paddingLeft: 8}}>
+          <View style={{ paddingLeft: 8 }}>
             <Text style={CommonStyle.text12_inter_r}>
               {numberWithCommas(item?.cart_point)}
             </Text>
           </View>
         </View>
 
-        <View style={[CommonStyle.row, {flex: 1}]}>
-          <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart}]}>
-            <Image source={Theme.icon_card} style={styles.card}/>
+        <View style={[CommonStyle.row, { flex: 1 }]}>
+          <View style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart }]}>
+            <Image source={Theme.icon_card} style={styles.card} />
           </View>
-          <View style={{paddingLeft: 8}}>
+          <View style={{ paddingLeft: 8 }}>
             <Text style={CommonStyle.text12_inter_r}>
               {numberWithCommas(item?.card_point)}
             </Text>
           </View>
         </View>
 
-        <View style={[CommonStyle.row, {flex: 1}]}>
+        <View style={[CommonStyle.row, { flex: 1 }]}>
           {item?.comments ?
             <View style={CommonStyle.row}>
-              <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart, marginRight: 8}]}>
-                <Image source={Theme.icon_message} style={styles.card}/>
+              <View style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart, marginRight: 8 }]}>
+                <Image source={Theme.icon_message} style={styles.card} />
               </View>
 
               <View>
                 {item?.transaction_photo ?
-                  <View style={[styles.cardWrapper, {width: 20, height: 20}]}>
-                    <Image source={{uri: item?.transaction_photo ? item?.transaction_photo : 'http'}}
-                           style={{width: 20, height: 20, resizeMode: 'cover'}}/>
+                  <View style={[styles.cardWrapper, { width: 20, height: 20 }]}>
+                    <Image source={{ uri: item?.transaction_photo ? item?.transaction_photo : 'http' }}
+                      style={{ width: 20, height: 20, resizeMode: 'cover' }} />
                   </View>
                   : null
                 }
@@ -112,9 +112,9 @@ const ReceiptCard = (props) => {
             </View>
             : <View>
               {item?.transaction_photo ?
-                <View style={[styles.cardWrapper, {backgroundColor: Theme.greyShopCart}]}>
-                  <Image source={{uri: item?.transaction_photo ? item?.transaction_photo : 'http'}}
-                         style={{width: 34, height: 34, resizeMode: 'cover'}}/>
+                <View style={[styles.cardWrapper, { backgroundColor: Theme.greyShopCart }]}>
+                  <Image source={{ uri: item?.transaction_photo ? item?.transaction_photo : 'http' }}
+                    style={{ width: 34, height: 34, resizeMode: 'cover' }} />
                 </View>
                 : null
               }
@@ -123,12 +123,12 @@ const ReceiptCard = (props) => {
         </View>
 
         {(!item?.discount || item?.discount < 1) ?
-          <View style={{width: 60}}/>
+          <View style={{ width: 60 }} />
           :
-          <View style={[styles.discountWrapper, {width: 60}]}>
-            <Image source={Theme.icon_cashback} style={styles.card}/>
-            <View style={{paddingLeft: 0}}>
-              <Text style={[CommonStyle.text12_inter_m, {color: '#F44336'}]}>
+          <View style={[styles.discountWrapper, { width: 60 }]}>
+            <Image source={Theme.icon_cashback} style={styles.card} />
+            <View style={{ paddingLeft: 0 }}>
+              <Text style={[CommonStyle.text12_inter_m, { color: '#F44336' }]}>
                 {numberWithCommas(item?.discount)}%
               </Text>
             </View>
